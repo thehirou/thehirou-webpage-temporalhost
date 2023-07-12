@@ -7,24 +7,66 @@
 </head>
 <body>
 
+
+
 <div class="container">
+
+    <div class="carousel-container">
+        <div class="carousel-track">
+          <a href="https://apfel.neocities.org/"><img src="https://apfel.neocities.org/buttonBlume.png"></a>
+          <a href="https://thehirou.com/"><img src="media/hirou-button.png"></a>
+          <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
+          <a href="https://apfelproject.com/"><img src="media/apfel-button.png"></a>
+        </div>
+      </div>
+      <!-- PLEASE IF ANYONE KNOWS HOW TO MAKE THIS SHIT SCROLL LET ME KNOW I'M GOING TO BANG MY HEAD 
+      AGAINST THE WALL IF I KEEP TRYING -->
+    
+
+    <div id="masking-left"></div>
+    <div id="masking-right"></div>
 
 
     <div id="thehirou-text">
          <p>TheHirou</p>
     </div>	
 
+    <div id="apfel-kase">
+        <img src="media/npc-apfel-kase.png" alt="Apfel and Kase" onmouseover="changeImage()" onmouseout="restoreImage()">
+        <audio id="audio-hover">
+          <source src="media/aud-hover-npc.ogg" type="audio/ogg">
+        </audio>
+      </div>
+
+    <script>
+        function changeImage() {
+        var image = document.getElementById("apfel-kase").getElementsByTagName("img")[0];
+        var audio = document.getElementById("audio-hover");
+
+        image.src = "media/npc-apfel-kase-alt.png";
+        audio.play();
+        }
+
+        function restoreImage() {
+        var image = document.getElementById("apfel-kase").getElementsByTagName("img")[0];
+
+        image.src = "media/npc-apfel-kase.png";
+        }
+    </script>
+
     <div id="hiroupic">
             <img src="media/hirou-pic.png" alt="Hirou" width="150px" height="150px">
     </div>	
 
     <div id="text-1">
-        <p>Game developer, composer, lasagna enjoyer, mouse in disguise.</p>
+        <p>Game developer, composer and mouse in disguise.</p>
    </div>	
 
     <div id="tumblr-logo">
-        <a href="">
-            <img src="media/tumblr-logo.png" alt="Hirou" width="40px" height="40px">
+        <a href="https://www.tumblr.com/thehirou">
+            <img src="media/tumblr-logo.png" alt="Hirou" width="40px" height="40px"
+            onmouseover="playAudio('media/hovering-right.ogg')" 
+            onmouseout="pauseAudio()">
         </a>
     </div>	
 
@@ -33,8 +75,10 @@
     </div>
 
     <div id="twitter-logo">
-        <a href="">
-            <img src="media/twitter-logo.png" alt="Hirou" width="40px" height="40px">
+        <a href="https://twitter.com/thehirou">
+            <img src="media/twitter-logo.png" alt="Hirou" width="40px" height="40px"
+            onmouseover="playAudio('media/hovering-right.ogg')" 
+            onmouseout="pauseAudio()">
         </a>
     </div>	
 
@@ -43,9 +87,11 @@
     </div>
 
     <div id="bandcamp-logo">
-        <a href="">
-            <img src="media/bandcamp-logo.png" alt="Hirou" width="40px" height="40px">
-        </a>
+        <a href="https://music.thehirou.com">
+            <img src="media/bandcamp-logo.png" alt="Hirou" width="40px" height="40px"
+            onmouseover="playAudio('media/hovering-right.ogg')" 
+            onmouseout="pauseAudio()">
+          </a>
     </div>	
 
     <div id="bandcamp-text">
@@ -53,8 +99,10 @@
     </div>
 
     <div id="discord-logo">
-        <a href="">
-            <img src="media/discord-logo.png" alt="Hirou" width="40px" height="40px">
+        <a href="https://discord.com/users/409499035083210752/">
+            <img src="media/discord-logo.png" alt="Hirou" width="40px" height="40px"
+            onmouseover="playAudio('media/hovering-right.ogg')" 
+            onmouseout="pauseAudio()">
         </a>
     </div>	
 
@@ -63,26 +111,72 @@
     </div>
 
     <div id="apfel-logo">
-        <a href="">
-            <img src="media/apfel-logo.png" alt="Hirou" width="40px" height="40px">
-        </a>
-    </div>	
-    <div id="music-logo">
-        <a href="">
-            <img src="media/apfel-logo.png" alt="Hirou" width="40px" height="40px">
-        </a>
-    </div>	
-    <div id="fanart-logo">
-        <a href="">
-            <img src="media/apfel-logo.png" alt="Hirou" width="40px" height="40px">
-        </a>
-    </div>	
-    <div id="about-logo">
-        <a href="">
-            <img src="media/apfel-logo.png" alt="Hirou" width="40px" height="40px">
+        <a href="https://apfelproject.com">
+            <img src="media/apfel-logo.png" alt="Hirou" width="40px" height="40px"
+            onmouseover="playAudio('media/hovering-left.ogg')" 
+            onmouseout="pauseAudio()">
         </a>
     </div>	
 
+    <div id="apfel-text">
+        <p>APFEL PRµJECT</p>
+    </div>
+
+    <div id="music-logo">
+        <a href="inprogress.html">
+            <img src="media/music-logo.png" alt="Hirou" width="40px" height="40px"
+            onmouseover="playAudio('media/hovering-left.ogg')" 
+            onmouseout="pauseAudio()">
+        </a>
+    </div>	
+
+    <div id="music-text">
+        <p>Music</p>
+    </div>
+
+    <div id="fanart-logo">
+        <a href="inprogress.html">
+            <img src="media/fanart-logo.png" alt="Hirou" width="40px" height="40px"
+            onmouseover="playAudio('media/hovering-left.ogg')" 
+            onmouseout="pauseAudio()">
+        </a>
+    </div>	
+
+    <div id="fanart-text">
+        <p>Fanart</p>
+    </div>
+
+    <div id="about-logo">
+        <a href="inprogress.html">
+            <img src="media/about-logo.png" alt="Hirou" width="40px" height="40px"
+            onmouseover="playAudio('media/hovering-left.ogg')" 
+            onmouseout="pauseAudio()">
+        </a>
+    </div>	
+
+    <div id="about-text">
+        <p>About</p>
+    </div>
+
+<script>
+var audio;
+
+function playAudio(audioFile) {
+  if (audio) {
+    audio.pause();
+  }
+  
+  audio = new Audio(audioFile);
+  audio.play();
+}
+
+function pauseAudio() {
+  if (audio) {
+    audio.pause();
+  }
+}
+
+</script>
 
 </div>
 

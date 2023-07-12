@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(7, 7, 7);
 }
 
 .container {
@@ -8,23 +8,73 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:700px;
+    width:550px;
     height:320px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 1px;
     border-color: white;
 
   }
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 230px;
+    width:100%;
+    height:100px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 1px;
+    border-color: white;
+
+  }
+
+  .carousel-track {
+    display: flex;
+  }
+  
+  .carousel-track a {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust the spacing between images if needed */
+  }
+  
+  
 
   @font-face {
     font-family: "CustomFont";
     src: url("media/apfelFontV01.ttf") format("truetype");
   }
   
+div#apfel-kase{
+    position: absolute;
+    top: -102px;
+    left: 35%;
+    width:300px;
+    height:20px;
+}
+
+div#masking-left{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width:300px;
+    height:20px;
+    background-color: rgb(7, 7, 7);
+}
+
+div#masking-right{
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width:300px;
+    height:20px;
+    background-color: rgb(7, 7, 7);
+}
 
   div#thehirou-text{
     position: absolute;
-    top: 160px;
+    top: 110px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -35,9 +85,40 @@ body{
     font-size: 30px;
   }
 
+  div#workinprogress-text{
+    
+    width: 500px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  div#workinprogress-text p{
+    text-align: center;
+    font-family: "CustomFont", sans-serif;
+    color: white;
+    font-size: 30px;
+  }
+
+  div#text-wip{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  div#text-wip p{
+    text-align: center;
+    width: 800px;
+    font-family: "CustomFont", sans-serif;
+    color: white;
+    font-size: 12px;
+  }
+
   div#text-1{
     position: absolute;
-    top: 240px;
+    top: 190px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -51,7 +132,7 @@ body{
 
   div#hiroupic{
     position: absolute;
-    top: 30px;
+    top: -20px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -215,6 +296,30 @@ body{
 
 /* LEFT SIDE */
 
+div#apfel-text{
+    opacity: 0;
+    position: absolute;
+    right: 113%;
+    top: 5px;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+  }
+
+  div#apfel-text p{
+    text-align: right;
+    width: 200px;
+    font-family: "CustomFont", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+
+  div#apfel-logo:hover + div#apfel-text {
+    opacity: 1;
+    animation: shake 3s ease-in-out infinite;
+    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
+  }
+  
+
 
   div#apfel-logo{
     opacity: 0.5;
@@ -230,6 +335,30 @@ body{
     animation: shake 2s ease-in-out infinite;
   }
 
+  div#music-text{
+    opacity: 0;
+    position: absolute;
+    right: 113%;
+    top: 85px;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+  }
+
+  div#music-text p{
+    text-align: right;
+    width: 200px;
+    font-family: "CustomFont", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+
+  div#music-logo:hover + div#music-text {
+    opacity: 1;
+    animation: shake 3s ease-in-out infinite;
+    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
+  }
+
+  
   div#music-logo{
     opacity: 0.5;
     position: absolute;
@@ -244,6 +373,30 @@ body{
     animation: shake 2s ease-in-out infinite;
   }
 
+
+  div#fanart-text{
+    opacity: 0;
+    position: absolute;
+    right: 113%;
+    top: 165px;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+  }
+
+  div#fanart-text p{
+    text-align: right;
+    width: 200px;
+    font-family: "CustomFont", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+
+  div#fanart-logo:hover + div#fanart-text {
+    opacity: 1;
+    animation: shake 3s ease-in-out infinite;
+    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
+  }
+
   div#fanart-logo{
     opacity: 0.5;
     position: absolute;
@@ -256,6 +409,29 @@ body{
     filter: drop-shadow(0 0 10px white) brightness(150%);
     animation: glow 1s infinite alternate;
     animation: shake 2s ease-in-out infinite;
+  }
+
+  div#about-text{
+    opacity: 0;
+    position: absolute;
+    right: 113%;
+    top: 245px;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+  }
+
+  div#about-text p{
+    text-align: right;
+    width: 200px;
+    font-family: "CustomFont", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+
+  div#about-logo:hover + div#about-text {
+    opacity: 1;
+    animation: shake 3s ease-in-out infinite;
+    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
   }
 
   div#about-logo{
