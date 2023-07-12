@@ -20,7 +20,7 @@ body{
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 250px;
+    top: 370px;
     width:100%;
     height:100px;
     background-color: rgba(0, 0, 0, 0);
@@ -133,6 +133,13 @@ div#masking-right{
   div#hiroupic{
     position: absolute;
     top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  div#banner-under{
+    position: absolute;
+    bottom: -80px;
     left: 50%;
     transform: translateX(-50%);
   }
