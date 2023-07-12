@@ -36,7 +36,7 @@ body{
   .carousel-track a {
     display: flex;
     align-items: center;
-    margin-right: 10px; /* Adjust the spacing between images if needed */
+    margin-right: 10px;
   }
   
   
@@ -145,14 +145,14 @@ div#masking-right{
     position: absolute;
     left: 113%;
     top: 5px;
-    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
-    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+    transition: opacity 0.3s ease-in-out; 
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0); 
   }
 
   div#tumblr-logo:hover + div#tumblr-text {
     opacity: 1;
     animation: shake 3s ease-in-out infinite;
-    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
+    text-shadow: 0 0 10px rgb(255, 255, 255); 
   }
 
   div#tumblr-text p{
@@ -184,8 +184,8 @@ div#masking-right{
     position: absolute;
     left: 113%;
     top: 85px;
-    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
-    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+    transition: opacity 0.3s ease-in-out; 
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0);
   }
 
   div#twitter-text p{
@@ -198,7 +198,7 @@ div#masking-right{
   div#twitter-logo:hover + div#twitter-text {
     opacity: 1;
     animation: shake 3s ease-in-out infinite;
-    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
+    text-shadow: 0 0 10px rgb(255, 255, 255);
   }
   
   div#twitter-logo{
@@ -223,8 +223,8 @@ div#masking-right{
     position: absolute;
     left: 113%;
     top: 165px;
-    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
-    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+    transition: opacity 0.3s ease-in-out; 
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0);
   }
 
   div#bandcamp-text p{
@@ -237,7 +237,7 @@ div#masking-right{
   div#bandcamp-logo:hover + div#bandcamp-text {
     opacity: 1;
     animation: shake 3s ease-in-out infinite;
-    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
+    text-shadow: 0 0 10px rgb(255, 255, 255); 
   }
 
   div#bandcamp-logo{
@@ -262,8 +262,8 @@ div#masking-right{
     position: absolute;
     left: 113%;
     top: 245px;
-    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
-    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+    transition: opacity 0.3s ease-in-out; 
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0); 
   }
 
   div#discord-text p{
@@ -276,7 +276,7 @@ div#masking-right{
   div#discord-logo:hover + div#discord-text {
     opacity: 1;
     animation: shake 3s ease-in-out infinite;
-    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
+    text-shadow: 0 0 10px rgb(255, 255, 255); 
   }
   
   div#discord-logo{
@@ -301,8 +301,8 @@ div#apfel-text{
     position: absolute;
     right: 113%;
     top: 5px;
-    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
-    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+    transition: opacity 0.3s ease-in-out; 
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0);
   }
 
   div#apfel-text p{
@@ -316,7 +316,7 @@ div#apfel-text{
   div#apfel-logo:hover + div#apfel-text {
     opacity: 1;
     animation: shake 3s ease-in-out infinite;
-    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
+    text-shadow: 0 0 10px rgb(255, 255, 255); 
   }
   
 
@@ -340,8 +340,8 @@ div#apfel-text{
     position: absolute;
     right: 113%;
     top: 85px;
-    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
-    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+    transition: opacity 0.3s ease-in-out;
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0); 
   }
 
   div#music-text p{
@@ -355,7 +355,7 @@ div#apfel-text{
   div#music-logo:hover + div#music-text {
     opacity: 1;
     animation: shake 3s ease-in-out infinite;
-    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
+    text-shadow: 0 0 10px rgb(255, 255, 255); 
   }
 
   
@@ -379,8 +379,8 @@ div#apfel-text{
     position: absolute;
     right: 113%;
     top: 165px;
-    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
-    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+    transition: opacity 0.3s ease-in-out;
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0); 
   }
 
   div#fanart-text p{
@@ -394,7 +394,7 @@ div#apfel-text{
   div#fanart-logo:hover + div#fanart-text {
     opacity: 1;
     animation: shake 3s ease-in-out infinite;
-    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
+    text-shadow: 0 0 10px rgb(255, 255, 255);
   }
 
   div#fanart-logo{
@@ -416,8 +416,8 @@ div#apfel-text{
     position: absolute;
     right: 113%;
     top: 245px;
-    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
-    text-shadow: 0 0 5px rgba(0, 0, 255, 0); /* Initial box shadow */
+    transition: opacity 0.3s ease-in-out; 
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0); 
   }
 
   div#about-text p{
@@ -431,7 +431,7 @@ div#apfel-text{
   div#about-logo:hover + div#about-text {
     opacity: 1;
     animation: shake 3s ease-in-out infinite;
-    text-shadow: 0 0 10px rgb(255, 255, 255); /* Updated box shadow when hovering */
+    text-shadow: 0 0 10px rgb(255, 255, 255); 
   }
 
   div#about-logo{
