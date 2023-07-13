@@ -54,12 +54,20 @@ body{
     src: url("media/apfelFontV01.ttf") format("truetype");
   }
   
-div#apfel-kase{
+div#parmesan{
     position: absolute;
-    top: -102px;
+    top: -84px;
     left: 35%;
     width:300px;
     height:20px;
+}
+  
+div#apfel-walk{
+    position: absolute;
+    bottom: -9px;
+    right: 50%;
+    transform: translateX(50%);
+    width:100%;
 }
 
 div#masking-left{

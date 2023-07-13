@@ -38,32 +38,33 @@
          <p>TheHirou</p>
     </div>	
 
-    <div id="apfel-kase">
-        <img src="media/npc-apfel-kase.png" alt="Apfel and Kase" onmouseover="changeImage()" onmouseout="restoreImage()">
+    <div id="parmesan">
+        <img src="media/npc-parmesan-1.png" alt="Parmsesan" onmouseover="changeImage()" onmouseout="restoreImage()">
         <audio id="audio-hover">
-          <source src="media/aud-hover-npc.ogg" type="audio/ogg">
+          <source src="media/snd_parmesan_laugh.ogg" type="audio/ogg">
         </audio>
       </div>
 
     <script>
         function changeImage() {
-        var image = document.getElementById("apfel-kase").getElementsByTagName("img")[0];
+        var image = document.getElementById("parmesan").getElementsByTagName("img")[0];
         var audio = document.getElementById("audio-hover");
 
-        image.src = "media/npc-apfel-kase-alt.png";
+        image.src = "media/npc-parmesan-2.png";
         audio.play();
         }
 
         function restoreImage() {
-        var image = document.getElementById("apfel-kase").getElementsByTagName("img")[0];
+        var image = document.getElementById("parmesan").getElementsByTagName("img")[0];
 
-        image.src = "media/npc-apfel-kase.png";
+        image.src = "media/npc-parmesan-1.png";
         }
     </script>
 
     <div id="hiroupic">
             <img src="media/hirou-pic.png" title="Profile picture drawn by YugoMiroslav" width="150px" height="150px">
     </div>	
+
 
     <div id="banner-under">
         <a href="https://apfelproject.com">
@@ -192,7 +193,11 @@ function pauseAudio() {
 </script>
 
 
-
+<div id="apfel-walk">
+    <marquee behavior="scroll" direction="right">
+        <img src="media/npc-apfel-walk.gif">
+    </marquee>
+</div>	
 
 </div>
 
