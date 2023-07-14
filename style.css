@@ -70,6 +70,10 @@ div#apfel-walk{
     width:100%;
 }
   
+div#spacer{
+  height: 10px;
+}
+
 div#apfel-fade-right{
   position: absolute;
   bottom: -5px;
@@ -77,6 +81,27 @@ div#apfel-fade-right{
   width:100%;
 }
   
+#apfel-font-alt {
+  opacity: 0.5;
+  line-height: 30px;
+  font-family: "CustomFont", sans-serif;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: opacity 0.5s, box-shadow 0.5s;
+}
+
+#apfel-font-alt a {
+  text-decoration: none;
+}
+
+#apfel-font-alt:hover {
+  opacity: 1;
+  text-shadow: 0 0 10px #fff;
+  animation: shake 2s ease-in-out infinite;
+}
+
+
 div#apfel-fade-left{
     position: absolute;
     bottom: -5px;
@@ -134,7 +159,7 @@ div#masking-right{
   div#text-wip{
     position: absolute;
     width: 150%;
-    top: 90px;
+    top: 65px;
     left: 50%;
     transform: translateX(-50%);
   }
