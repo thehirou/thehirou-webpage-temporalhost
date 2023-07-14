@@ -69,6 +69,20 @@ div#apfel-walk{
     transform: translateX(50%);
     width:100%;
 }
+  
+div#apfel-fade-right{
+  position: absolute;
+  bottom: -5px;
+  left: 326px;
+  width:100%;
+}
+  
+div#apfel-fade-left{
+    position: absolute;
+    bottom: -5px;
+    right: 00px;
+    width:100%;
+}
 
 div#masking-left{
     position: absolute;
