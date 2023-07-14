@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="media/logo.png">
+    <meta charset="UTF-8">
+    <title>TheHirou</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<div class="container">
+
+
+    <div id="masking-left"></div>
+    <div id="masking-right"></div>
+
+
+    <div id="workinprogress-text">
+         <p>About</p>
+    </div>	
+
+    <div id="text-wip">
+        <p>I'm Hirou, I make music and I'm developing an indie RPG game!<br>Every now and then I try to draw and animate.<br><br>
+            I love rats, in fact I'm always being controlled by one, Ratatouille-style.<br><br>
+            My favorite game is 'Dragon Quest VIII', my favorite movie is 'Kiki's Delivery Service' and my favorite drink is matcha latte.
+        </p>
+   </div>		
+
+    <div id="apfel-logo">
+        <a href="index.html">
+            <img src="media/back-logo.png" alt="Go back" width="40px" height="40px"
+            onmouseover="playAudio('media/hovering-left.ogg')" 
+            onmouseout="pauseAudio()">
+        </a>
+    </div>	
+
+    <div id="apfel-text">
+        <p>Go back</p>
+    </div>
+
+    <script>
+    var audio;
+
+    function playAudio(audioFile) {
+    if (audio) {
+        audio.pause();
+    }
+    
+    audio = new Audio(audioFile);
+    audio.play();
+    }
+
+    function pauseAudio() {
+    if (audio) {
+        audio.pause();
+    }
+    }
+
+    </script>
+
+</div>
+
+
+</body>
+</html>

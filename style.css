@@ -119,17 +119,45 @@ div#masking-right{
 
   div#text-wip{
     position: absolute;
-    top: 70px;
+    width: 150%;
+    top: 90px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   div#text-wip p{
     text-align: center;
-    width: 800px;
     font-family: "CustomFont", sans-serif;
     color: white;
     font-size: 12px;
+  }
+
+  div#box-fanart{
+    border: 2px solid;
+    border-color: white;
+    padding: 5px;
+  }
+
+  div#fanart{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .under-fanart{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 25px;
+    opacity: 1;
+  }
+
+  div#fanart img{
+    width: 100%;
+  }
+
+  div#fanart audio{
+    width: 100%;
   }
 
   div#text-1{
