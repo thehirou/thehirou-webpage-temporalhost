@@ -179,7 +179,11 @@ div#masking-right{
   }
 
 .separator{
-    height: 10px;
+  height: 150px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
   }
 
   .under-fanart a {
