@@ -178,6 +178,23 @@ div#masking-right{
     padding: 5px;
   }
 
+.separator{
+    height: 10px;
+  }
+
+  .under-fanart a {
+    opacity: 0.7;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Add smooth transition effect */
+  }
+
+  .under-fanart a:hover {
+    color: rgb(243, 255, 74);
+    opacity: 1;
+    filter: drop-shadow(0 0 10px rgb(255, 221, 110)) brightness(150%);
+  }
+
   div#fanart{
     width: 300px;
     position: absolute;
@@ -194,7 +211,16 @@ div#masking-right{
 
   div#fanart img{
     width: 100%;
+    transition: transform 0.1s ease;
   }
+
+
+  div#fanart img:hover {
+    transform: scale(2);
+    border: 2px solid black; 
+    outline: 1px solid white;
+  }
+
 
   div#fanart audio{
     width: 100%;
@@ -228,8 +254,10 @@ div#masking-right{
     transform: translateX(-50%);
   }
 
-/* RIGHT SIDE */
 
+
+
+/* RIGHT SIDE */
 
   div#tumblr-text{
     opacity: 0;
