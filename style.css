@@ -141,6 +141,15 @@ div#masking-right{
     font-size: 30px;
   }
 
+  div#workinprogress-2-text{
+    
+    width: 800px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   div#workinprogress-text{
     
     width: 500px;
@@ -148,6 +157,13 @@ div#masking-right{
     top: -30px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  div#workinprogress-2-text p{
+    text-align: center;
+    font-family: "CustomFont", sans-serif;
+    color: white;
+    font-size: 30px;
   }
 
   div#workinprogress-text p{
@@ -164,6 +180,61 @@ div#masking-right{
     left: 50%;
     transform: translateX(-50%);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MAN THIS CSS FILE IS A FUCKING MESS*/
+
+
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.centered-image {
+  width: 640px;
+  height: 480px;
+  object-fit: contain;
+}
+
+.human-name-top-text, .human-name-bottom-text {
+  text-align: center;
+  font-family: "CustomFont", sans-serif;
+  color: white;
+  font-size: 24px;
+}
+
+.human-name-top-text {
+  margin-bottom: 0px;
+}
+
+.human-name-bottom-text {
+  position: absolute;
+  top: 740px
+  /* bottom: 0; */
+}
+
+
+
+
+
 
   div#text-wip p{
     text-align: center;
@@ -186,6 +257,14 @@ div#masking-right{
   padding: 0;
   }
 
+.separator-little{
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  }
+
   .under-fanart a {
     opacity: 0.7;
     color: #ffffff;
@@ -197,6 +276,18 @@ div#masking-right{
     color: rgb(243, 255, 74);
     opacity: 1;
     filter: drop-shadow(0 0 10px rgb(255, 221, 110)) brightness(150%);
+  }
+
+  div#working{
+    width: 640px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  div#working img{
+    width: 100%;
+    transition: transform 0.1s ease;
   }
 
   div#fanart{
