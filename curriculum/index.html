@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Curriculum</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Consolas, monaco, monospace;
+            white-space: pre;
+            line-height: 15px;
+            margin: 20px;
+        }
+
+        a {
+            color: green;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<pre>
+<span style="color: white;"><a href="https://thehirou.com">VERSIÓN PARA DISPOSITIVO MÓVIL</a>
+
+ ██████ ██    ██ ██████  ██████  ██  ██████ ██    ██ ██      ██    ██ ███    ███     ██    ██ ██ ████████  █████  ███████ 
+██      ██    ██ ██   ██ ██   ██ ██ ██      ██    ██ ██      ██    ██ ████  ████     ██    ██ ██    ██    ██   ██ ██      
+██      ██    ██ ██████  ██████  ██ ██      ██    ██ ██      ██    ██ ██ ████ ██     ██    ██ ██    ██    ███████ █████   
+██      ██    ██ ██   ██ ██   ██ ██ ██      ██    ██ ██      ██    ██ ██  ██  ██      ██  ██  ██    ██    ██   ██ ██      
+ ██████  ██████  ██   ██ ██   ██ ██  ██████  ██████  ███████  ██████  ██      ██       ████   ██    ██    ██   ██ ███████ 
+
+Marco Rüdiger Ruiz, 19 años
+<a href="mailto:marcorudigerruiz@gmail.com">marcorudigerruiz@gmail.com</a>
+
+Habilidades
+├── Programador senior en GML
+├── Programador junior en HTML / CSS
+├── <a href="https://thehirou.com/portfolio">Portfolio</a>
+├── Photoshop nivel avanzado
+└── Hojas de cálculo nivel intermedio
+
+Idiomas
+├── Español nativo
+├── Inglés avanzado
+└── Alemán básico
+
+Experiencia
+├── Traductor en OMO-ESP, España, 2020-2021
+│   │
+│   │   Traductor para más de 30 horas de contenido multimedia,
+│   │   responsable del apartado gráfico; audiovisual, marketing,
+│   │   testeo y traducción general.
+│   │   INGLÉS -> ESPAÑOL
+│   │
+│   └── 
+├── Mantenimiento electricista en Ilightworkx, Inditex, Alemania, 2021-2023
+│   │
+│   │   Mantenimiento físico de servidores en distintas tiendas
+│   │   de INDITEX en Alemania, documentación de su estado en Excel.
+│   │   Cableado de redes e instalación de sistemas para preparar
+│   │   el envío de paquetes desde almacén.
+│   │   Diseño del logotipo de la empresa.
+│   │   
+│   └── 
+├── Prácticas en Ilightworkx, Alemania
+│   │
+│   │   Montaje y desmontaje de equipo de conciertos; luces,
+│   │   altavoces, monitores, cableado, setup.
+│   │   
+│   └── 
+├── Bartender y ayudante en Absinth Depot, Alemania, Verano 2023
+│   │
+│   │   Orden de logística en el almacén, recuento de inventario,
+│   │   preparación de bebidas alcohólicas de absenta, cobro en caja,
+│   │   limpieza de vajilla, limpieza de mesas, reponedor de bebidas.
+│   │   
+│   └── 
+└── 
+
+
+</span><span style="color: blue;"> </pre></body>
+
+    <script>
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+
+        function showMobilePopup() {
+            if (isMobileDevice()) {
+                var popup = document.createElement('div');
+                popup.className = 'mobile-popup';
+                popup.innerHTML = '<p>Es recomendable ver está página en un dispositivo de escritorio.</p>';
+
+                popup.style.position = 'fixed';
+                popup.style.top = '0';
+                popup.style.left = '0';
+                popup.style.right = '0';
+                popup.style.bottom = '0';
+                popup.style.background = 'rgba(0, 0, 0, 0.8)';
+                popup.style.color = 'white';
+                popup.style.textAlign = 'center';
+                popup.style.padding = '20px';
+
+                document.body.appendChild(popup);
+
+                popup.addEventListener('click', function () {
+                    document.body.removeChild(popup);
+                });
+            }
+        }
+
+        showMobilePopup();
+    </script>
+
+</html>
