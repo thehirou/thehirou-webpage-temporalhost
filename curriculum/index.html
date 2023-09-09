@@ -21,8 +21,7 @@
     </style>
 </head>
 <body>
-<pre>
-<span style="color: white;"><a href="https://thehirou.com">VERSIÓN PARA DISPOSITIVO MÓVIL</a>
+<pre><span style="color: white;"><a href="https://thehirou.com">VERSIÓN PARA DISPOSITIVO MÓVIL</a>
 
  ██████ ██    ██ ██████  ██████  ██  ██████ ██    ██ ██      ██    ██ ███    ███     ██    ██ ██ ████████  █████  ███████ 
 ██      ██    ██ ██   ██ ██   ██ ██ ██      ██    ██ ██      ██    ██ ████  ████     ██    ██ ██    ██    ██   ██ ██      
@@ -90,7 +89,7 @@ Experiencia
             if (isMobileDevice()) {
                 var popup = document.createElement('div');
                 popup.className = 'mobile-popup';
-                popup.innerHTML = '<p>Es recomendable ver está página en un dispositivo de escritorio.</p>';
+                popup.innerHTML = '<p>Es recomendable ver está página en un dispositivo de escritorio.</p>Presione en cualquier lugar para ignorar.';
 
                 popup.style.position = 'fixed';
                 popup.style.top = '0';
@@ -99,7 +98,7 @@ Experiencia
                 popup.style.bottom = '0';
                 popup.style.background = 'rgba(0, 0, 0, 0.8)';
                 popup.style.color = 'white';
-                popup.style.textAlign = 'center';
+                popup.style.textAlign = 'left';
                 popup.style.padding = '20px';
 
                 document.body.appendChild(popup);
