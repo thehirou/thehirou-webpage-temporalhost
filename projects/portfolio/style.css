@@ -1,0 +1,222 @@
+/* CSS for the layout */
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 100px;
+}
+
+body {
+	font-family: 'IBM Plex Mono', monospace;
+	background-color: aqua;
+	background-image: url('img/tiles.bmp');
+	background-repeat: repeat;
+  }
+
+/* .grid { */
+	/* display: grid; */
+	/* grid-template-columns: repeat(4, 1fr); */
+	/* grid-gap: 20px; */
+	/* width: 80%; */
+/* } */
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  width: 80%;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1350px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* CSS for the portfolio items */
+.portfolio-item {
+	position: relative;
+	background-color: #c4c4c4;
+	/* border-radius: 5px; */
+	padding: 20px;
+	border-style: groove;
+}
+
+.portfolio-item-profile {
+	position: relative;
+	background-color: #ffffff;
+	/* border-radius: 5px; */
+	padding: 20px;
+	border-style: groove;
+}
+
+.portfolio-item-ad {
+	position: relative;
+	background-color: #ff8181;
+	/* border-radius: 5px; */
+	padding: 20px;
+	border-style: groove;
+	border-color: #ff8181;
+}
+
+/* CSS for the portfolio item images */
+.portfolio-item img {
+	width: 100%;
+	height: auto;
+}
+
+.mobiletext{
+font-size: 30px;
+font-weight: 700;
+margin: 20px;
+}
+
+.mobilelink{
+font-size: 20px;
+font-weight: 700;
+margin: 20px;
+}
+
+.portfolio-item-profile img {
+	width: 100%;
+	height: auto;
+}
+
+.portfolio-item-ad img {
+	width: 100%;
+	height: auto;
+}
+
+.portfolio-item-project {
+	position: relative;
+	background-color: #91e5ff;
+	/* border-radius: 5px; */
+	padding: 20px;
+	border-style: groove;
+	border-color: #91e5ff;
+}
+
+.portfolio-item-project img {
+	width: 100%;
+	height: auto;
+}
+
+/* CSS for the portfolio item captions */
+.portfolio-item-caption {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/* CSS for the portfolio item descriptions */
+.portfolio-item-description {
+	margin-top: 5px;
+}
+
+/* CSS for the portfolio item descriptions */
+.portfolio-item-checkout {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 36px;
+  left: 20px;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1000px) {
+  .portfolio-item-checkout {
+    font-size: 16px; /* Increase the font size for mobile devices */
+  }
+}
+
+.portfolio-item-language {
+	position: absolute;
+	bottom: 12px;
+	left: 20px;
+	font-size: 12px;
+	opacity: 0.5;
+	font-style: italic;
+	/* font-weight: bold; */
+	padding-bottom: 5px;
+}
+
+.textTop
+{
+	font-weight: bold;
+	color: black;
+}
+
+.textBottom
+{
+	line-height: 0;
+	padding-bottom: 10px;
+	font-weight: bold;
+	color: black;
+	font-size: 12px;
+	opacity: 0.5;
+	font-style: italic;
+}
+
+.parent {
+  text-align: center;
+  background-color: #c4c4c4;
+  border-style: groove;
+  width: 30%;
+  margin: auto;
+}
+
+.parentMOBILE {
+  text-align: center;
+  background-color: #c4c4c4;
+  border-style: groove;
+  width: 80%;
+  margin: auto;
+}
+
+.child {
+  display: inline-block;
+}
+
+
+.enlarge-image {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.enlarge-image:hover {
+	/* cursor: pointer; */
+}
+
+.enlarge-image:hover {
+  transform: scale(1.02);
+}
+
+div#separator
+{
+
+width: 100%;
+height: 20px;
+
+}
+
+#filterInput {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}

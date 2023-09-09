@@ -1,0 +1,103 @@
+body
+{
+background-color: #535353
+}
+
+.container
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.bg_1
+{
+background-color: #c6c6c6;
+width: 970px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.bg_2
+{
+margin-top: 15px;
+background-color: #efefef;
+width: 640px;
+margin-bottom: 40px
+}
+
+.pageName
+{
+margin: 12px;
+font-family: Courier, monospace;
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+}
+
+.imagePanel
+{
+	
+}
+
+.pageText
+{
+line-height: 1.5;
+margin: 30px;
+font-family: Courier, monospace;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+}
+
+.command
+{
+margin: 16px;
+margin-bottom: 30px;
+font-family: Verdana, monospace;
+font-size: 24px;
+text-align: left;
+}
+
+.footer
+{
+line-height: 1.5;
+margin: 10px;
+font-family: Verdana, monospace;
+font-size: 16px;
+text-align: center;
+opacity: 1;
+}
+
+.spoilerLog
+{
+border-style: dashed;
+flex-direction: column;
+border-color: rgb(119, 119, 119);
+border-width: 1px;
+padding: 1px;
+margin: 20px;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+}
+
+.logText
+{
+line-height: 1.5;
+margin: 25px;
+margin-top: 10px;
+margin-bottom: 20px;
+font-family: Courier, monospace;
+font-size: 14px;
+font-weight: bold;
+text-align: left;
+}
+
+.spoilerButton
+{
+width: fit-content;
+align-self: center;
+}

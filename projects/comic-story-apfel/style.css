@@ -1,0 +1,244 @@
+body {background-color: #000000;}
+
+#contentBox {
+	background: #cccccc;
+	border: 1px solid #000000 ;
+	margin: auto;
+	width:850px;
+}
+
+#wrapper {
+    overflow: hidden;
+	padding-left: 50px;
+}
+
+#first {
+	margin-top: 50px;
+    width: 30%;
+    float: left;
+	background: #cccccc;
+	border: 1px solid #000000 ;
+}
+
+#second {
+	background: #cccccc;
+	border: 1px solid #000000 ;
+	margin: right;
+    width: 40%;
+}
+
+.indexWrap {
+	position: relative;
+	font-weight: bold;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: left;
+	border: 1px solid #000000 ;
+	font-family: 'Courier New', monospace;
+	font-size:16px;
+	width: 80%;
+	margin-top:25px;
+	margin-left:25px;
+	margin-right: 25px;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.nextPage {
+	font-weight: bold;
+	text-align: left;
+	font-family: 'Courier New', monospace;
+	margin-left: 24px;
+}
+
+.chapterIndex {
+	font-weight: bold;
+	text-align: left;
+	font-family: 'Courier New', monospace;
+	font-size:16px;
+	margin-left: 25px;
+}
+
+.gotoPage {
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Courier New', monospace;
+	margin-left: 25px;
+}
+
+.gotoPageBox {
+	color: #000000;
+	text-align: left;
+	font-family: 'Courier New', monospace;
+	margin-left: 25px;
+}
+
+.titleCenter {
+	font-weight: normal;
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Courier New', monospace;
+	font-size:16px;
+}
+
+.belowImg {
+	font-weight: normal;
+	color: #000000;
+	text-align: center;
+	font-family: 'Courier New', monospace;
+	font-size:12px;
+}
+
+.titleCenterStory {
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	font-family: 'Courier New', monospace;
+	font-size:24px;
+}
+
+.copyrightCenter {
+	font-weight: normal;
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Courier New', monospace;
+	font-size:16px;
+}
+
+.storyCenter {
+	position: relative;
+	font-weight: bold;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: center;
+	border: 1px solid #000000 ;
+	font-family: 'Courier New', monospace;
+	font-size:16px;
+	width: 700px;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:25px;
+	padding-right:25px;	
+}
+
+.storyCenterBig {
+	position: relative;
+	font-weight: bold;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: center;
+	border: 1px solid #000000 ;
+	font-family: 'Courier New', monospace;
+	font-size:24px;
+	width: 700px;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:25px;
+	padding-right:25px;	
+}
+
+.commentCenter {
+	position: relative;
+	font-weight: bold;
+	font-style: italic;
+	background-color: #fff2cc;
+	color: #000000;
+	text-align: center;
+	border: 1px solid #000000 ;
+	font-family: 'Courier New', monospace;
+	font-size:16px;
+	width: 700px;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:25px;
+	padding-right:25px;	
+}
+
+.storyLeft {
+	position: relative;
+	font-weight: bold;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: left;
+	border: 1px solid #000000 ;
+	font-family: 'Courier New', monospace;
+	font-size:16px;
+	width: 700px;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.storyConv {
+	position: relative;
+	font-weight: bold;
+	background-color: #eeeeee;
+	color: #000000;
+	text-align: left;
+	border: 4px ridge #cccccc ;
+	font-family: 'Courier New', monospace;
+	font-size:16px;
+	width: 700px;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.storyConvBig {
+	position: relative;
+	font-weight: bold;
+	background-color: #eeeeee;
+	color: #000000;
+	text-align: left;
+	border: 4px ridge #cccccc ;
+	font-family: 'Courier New', monospace;
+	font-size:24px;
+	width: 700px;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.storyLeftBig {
+	position: relative;
+	font-weight: bold;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: left;
+	border: 1px solid #000000 ;
+	font-family: 'Courier New', monospace;
+	font-size:24px;
+	width: 700px;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+
+
+.imgCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* #first #second{ */
+ /* position: relative; */
+ /* width: 95%; */
+ /* height: 95%; */
+ /* margin: auto; */
+
+ /* background: green; */
+/* } */

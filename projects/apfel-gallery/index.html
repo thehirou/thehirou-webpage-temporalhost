@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Apfel Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p>animation:<p/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLbulgaM_pwihrvdiA5n0D1G-FdMnNANCz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br>
+<br>
+
+<p>gifs, drawings, mockups and designs:<p/>
+  <div class="image-gallery" title="Click for full-res">
+    <script>
+      for (var i = 1; i <= 7; i++) {
+        var src = "media/apfel_" + i + ".gif";
+        document.write('<a href="' + src + '"><img src="' + src + '"></a>');
+      }
+    </script>
+    <script>
+      for (var i = 1; i <= 149; i++) {
+        var src = "media/apfel_" + i + ".png";
+        document.write('<a href="' + src + '"><img src="' + src + '"></a>');
+      }
+    </script>
+  </div>
+</body>
+</html>

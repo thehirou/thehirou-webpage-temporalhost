@@ -1,0 +1,57 @@
+/* CSS Document */
+
+/* Apply a global font-family */
+body {
+    font-family: courier, sans-serif;
+  }
+  
+/* Set the maximum width of the page */
+.container {
+    margin: 0 auto;
+  }
+  
+  .center
+  {
+    opacity: 0.5;
+    color: #efefef;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Style the div with the background color */
+  .my-div {
+    min-width: 570px;
+    background-color: #c6c6c6;
+    width: 53%;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* padding: 20px; */
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .inside-div
+  {
+    /* min-width: 650px; */
+    background-color: #efefef;
+    width: 67%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: -10px;
+  }
+
+  .button-border
+  {
+    margin: 0 auto;
+        border-style: dashed;
+        border-color: rgb(119, 119, 119);
+        border-width: 1px;
+        padding: 1px;
+        width: 90%;
+  }
+
+
+  .break {
+    height: 10px;
+  }
