@@ -86,11 +86,29 @@
         <img src="media/fade-apfel-walk-left.png">
     </div>
 
+
     <div id="banner-under">
-        <a href="https://apfelproject.com">
-            <img src="media/banner-id-kofi.gif" title="Go check it out at apfelproject.com!">
+        <a id="banner-link" href="https://apfelproject.com">
+            <img id="banner-img" title="Fake ad banner">
         </a>
-    </div>	
+    </div> 
+    
+    <script type="text/javascript">
+    window.onload = function() {
+        var images = [
+          {file: 'banner-id-kofi.gif', url: 'https://ko-fi.com/thehirou'},
+          {file: 'banner-id-apfel.gif', url: 'https://apfelproject.com'}
+        ]; 
+        var path = 'media/';
+
+        var imgElement = document.querySelector('#banner-img');
+        var linkElement = document.querySelector('#banner-link');
+        var randomIndex = Math.floor(Math.random() * images.length);
+
+        imgElement.src = path + images[randomIndex].file;
+        linkElement.href = images[randomIndex].url;
+    };
+    </script>
 
     <div id="text-1">
         <p>Game developer, composer and mouse in disguise.</p>
