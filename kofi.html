@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="media/logo.png">
+    <meta charset="UTF-8">
+    <title>TheHirou</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXBDY70QMG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZXBDY70QMG');
+</script>
+
+<div class="container">
+
+
+    <div id="masking-left"></div>
+    <div id="masking-right"></div>
+
+
+    <div id="workinprogress-text">
+         <p>Ko-Fi Test</p>
+    </div>	
+
+    <div class="separator"></div>
+    <div class="separator"></div>
+    <div class="separator"></div>
+    <div class="separator"></div>
+
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('thehirou', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#323842',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+
+    <div id="apfel-logo">
+        <a href="index.html">
+            <img src="media/back-logo.png" alt="Go back" width="40px" height="40px"
+            onmouseover="playAudio('media/hovering-left.ogg')" 
+            onmouseout="pauseAudio()">
+        </a>
+    </div>	
+
+    <div id="apfel-text">
+        <p>Go back</p>
+    </div>
+
+    <script>
+    var audio;
+
+    function playAudio(audioFile) {
+    if (audio) {
+        audio.pause();
+    }
+    
+    audio = new Audio(audioFile);
+    audio.play();
+    }
+
+    function pauseAudio() {
+    if (audio) {
+        audio.pause();
+    }
+    }
+
+    </script>
+
+</div>
+
+
+</body>
+</html>
