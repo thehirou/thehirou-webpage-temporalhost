@@ -1,0 +1,131 @@
+/*VARIABLES*/
+
+:root {
+    --header-height: 50px;
+
+    --image-width: 640px;
+    --image-height: 480px;
+
+    --blatherbox-width: 480px;
+    --blatherbox-height: 480px;
+
+    --main-centered-width: 1120px; /* (640 + 480) */
+
+    --blather-line-height: 1;
+
+    --distance-between-blather-linebreaks: 3px;
+}
+
+/*BODY*/
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: blue;
+    padding: 0;
+    margin: 0;
+    background-image: url('media/bg-tile.png');
+    background-repeat: repeat;
+}
+
+/*HEADER CSS*/
+
+.header-box{
+    width: 100%;
+    height: var(--header-height);
+    background-color: rgb(61, 4, 4);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*IFRAME*/
+
+iframe {
+    width: 100%;
+    height: var(--header-height);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: block;
+}
+/*MISCELANEOUS*/
+
+.separator {
+    height: 10px;
+    background-color: transparent;
+}
+
+/*DIV BOXES*/
+
+.center-page {
+    width: var(--main-centered-width);
+    background-color: blueviolet;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-div{
+    width: 640px;
+    height: 480px;
+    background-color: red;
+}
+
+.outer-blatherbox{
+    background-color: rgb(197, 197, 197);
+    width: 480px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blatherbox {
+    display: inline-block;
+    background-color: rgb(245, 245, 245);
+    width: 450px;
+    height: 450px;
+    overflow: auto;
+    border: 4px ridge;
+}
+
+/*TEXT FORMATTING*/
+
+.blathertext {
+    line-height: var(--blather-line-height);
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.blathertext p{
+    margin: 0;
+    padding: var(--distance-between-blather-linebreaks);
+    line-height: var(--blather-line-height);
+}
+
+/*CHARACTER COLOR CODES*/
+
+.apfel {
+    color: #b84e40;
+  }
+
+.kase {
+    color: #1c8a25;
+  }
+
+.emilio {
+    color: rgb(54, 54, 54);
+  }
+
+.blume {
+    color: #8d1a5d;
+  }
+
+.parmesan {
+    color: #d3950f;
+  }
+
