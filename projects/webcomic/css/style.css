@@ -21,13 +21,20 @@
     --blather-line-height: 1;
 
     --distance-between-blather-linebreaks: 3px;
+
+    --color-light: #F4C098;
+    --color-half: #806652;
+    --color-dark: #574436;
+    --color-black: #000000;
+    --color-blatherbox-inside: #f5f5f5;
+    --color-blatherbox-outside: #c5c5c5;
 }
 
 /*BODY*/
 
 body {
     font-family: "Courier New", Courier, monospace;
-    background-color: rgb(141, 141, 120);
+    background-color: var(--color-half);
     padding: 0;
     margin: 0;
     /* background-image: url('media/bg-tile.png');
@@ -39,18 +46,16 @@ body {
 .header-box{
     width: 100%;
     height: var(--header-height);
-    background-color: rgb(41, 41, 41);
-    color: white;
+    background-color: var(--color-dark);
+    color: var(--color-light);
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .header-box a {
-    color: rgb(184, 184, 184);
+    color: var(--color-light);
   }
 
 /*IFRAME*/
@@ -85,14 +90,23 @@ iframe {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--color-dark);
+    color: var(--color-light);
     text-decoration: none;
-    border: none;
+    border: ridge;
+    border-color: var(--color-light);;
     cursor: pointer;
 }
 
 /*DIV BOXES*/
+
+.page-border{
+    border: 3px solid var(--color-dark);
+    margin: 0 auto;
+    width: var(--main-centered-width);
+
+    transition: width var(--transition-speed);
+}
 
 .center-page {
     width: var(--main-centered-width);
@@ -102,16 +116,40 @@ iframe {
     flex-direction: row;
 }
 
+.center-nav {
+    width: var(--main-centered-width);
+    margin: 0 auto;
+    height: 100px;
+}
+
+.date-time{
+    width: var(--main-centered-width);
+    height: 30px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    transition: width var(--transition-speed);
+}
+
+.date-time p{
+    font-size: 9px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
 .image-div{
     width: 640px;
     height: 480px;
-    background-color: red;
+    /* background-color: red; */
 
-    transition: left var(--transition-speed);
 }
 
 .outer-blatherbox{
-    background-color: rgb(197, 197, 197);
+    background-color: var(--color-blatherbox-outside);
     width: var(--blatherbox-width);
     height: var(--blatherbox-height);
     display: flex;
@@ -123,7 +161,7 @@ iframe {
 
 .blatherbox {
     display: inline-block;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--color-blatherbox-inside);
     width: var(--blathertext-width);
     height: var(--blathertext-height);
     overflow: auto;
@@ -136,7 +174,7 @@ iframe {
     line-height: var(--blather-line-height);
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -158,17 +196,39 @@ iframe {
 }
 
 .page-title{
-    width: var(--main-centered-width); /*SAME AS CENTER-PAGE, THE DIV THAT STORES IMAGE AND BLATHER*/
-    height: 60px;
-    background-color: beige;
+    width: calc(var(--main-centered-width)); /*SAME AS CENTER-PAGE, THE DIV THAT STORES IMAGE AND BLATHER*/
+    height: 100%;
+    background-color: var(--color-light);
     text-align: center;
-    font-size: 32px;
-    font-weight: bold;
     justify-content: center;
     align-items: center;
     display: flex;
-
+    
     transition: width var(--transition-speed);
+}
+
+.background-alt{
+    width: calc(var(--main-centered-width));
+    height: 100%;
+    background-color: var(--color-light);
+    justify-content: center;
+
+    display: flex;
+    
+    transition: width var(--transition-speed);
+}
+
+.page-title-text{
+    width: 80%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-black);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 /*CHARACTER COLOR CODES*/
