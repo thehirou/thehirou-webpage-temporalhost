@@ -28,6 +28,30 @@
                     <p class="emilio">TODO: Fix header
                     <p class="emilio">TODO: Add footer
                     <p class="emilio">TODO: Change font
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="emilio">TODO: Lorem ipsum
                 </div>
             </div>
         </div>
@@ -38,32 +62,7 @@
         <button id="toggleButton">Toggle Blatherbox</button>
     </div>
     
-    <script>
-        const outerBlatherbox = document.getElementById('outer-blatherbox');
-        const blatherbox = document.getElementById('blatherbox');
-        const toggleButton = document.getElementById('toggleButton');
-        let isToggled = false;
-
-        toggleButton.addEventListener('click', () => {
-            isToggled = !isToggled;
-            const newWidth = isToggled ? '0px' : '640px';
-            outerBlatherbox.style.setProperty('--blatherbox-width', newWidth);
-
-            // Call the function to update --main-centered-width
-            updateMainCenteredWidth();
-
-            // Update border width based on visibility
-            const borderWidth = isToggled ? '0px' : '4px';
-            blatherbox.style.borderWidth = borderWidth;
-        });
-
-        function updateMainCenteredWidth() {
-            const imageWidth = window.getComputedStyle(outerBlatherbox).getPropertyValue('--image-width');
-            const blatherboxWidth = window.getComputedStyle(outerBlatherbox).getPropertyValue('--blatherbox-width');
-            const mainCenteredWidth = `calc(${imageWidth} + ${blatherboxWidth})`;
-            document.documentElement.style.setProperty('--main-centered-width', mainCenteredWidth);
-        }
-    </script>
+    <script src="scripts/toggle-blather.js"></script>
 
 </body>
 </html>
