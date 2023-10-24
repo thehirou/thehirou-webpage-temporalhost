@@ -14,26 +14,56 @@
 
     <div class="center-page">
 
-    <div class="image-div">
-        <img src="media/test-1.png" alt="Apfel Mus, looking at a tree that appeared in her dream.">
-    </div>
-    
-    <div class="outer-blatherbox">
-        <div class="blatherbox">
-            <div class="blathertext">
-                <p class="emilio">TODO: Add arrow key navigation
-                <p class="emilio">TODO: Improve graphics
-                <p class="emilio">TODO: If index page is accessed, redirect to latest published page
-                <p class="emilio">TODO: Add manual navigation with hyperlinks
-                <p class="emilio">TODO: Fix header
-                <p class="emilio">TODO: Add footer
-                <p class="emilio">TODO: Change font
+        <div class="image-div">
+            <img src="media/test-1.png" alt="Apfel Mus, looking at a tree that appeared in her dream.">
+        </div>
+        
+        <div class="outer-blatherbox" id="outer-blatherbox">
+            <div class="blatherbox" id="blatherbox">
+                <div class="blathertext">
+                    <p class="emilio">TODO: Add arrow key navigation
+                    <p class="emilio">TODO: Improve graphics
+                    <p class="emilio">TODO: If index page is accessed, redirect to latest published page
+                    <p class="emilio">TODO: Add manual navigation with hyperlinks
+                    <p class="emilio">TODO: Fix header
+                    <p class="emilio">TODO: Add footer
+                    <p class="emilio">TODO: Change font
+                </div>
             </div>
         </div>
-    </div>
-
-
 
     </div>
+
+    <div class="button-container">
+        <button id="toggleButton">Toggle Blatherbox</button>
+    </div>
+    
+    <script>
+        const outerBlatherbox = document.getElementById('outer-blatherbox');
+        const blatherbox = document.getElementById('blatherbox');
+        const toggleButton = document.getElementById('toggleButton');
+        let isToggled = false;
+
+        toggleButton.addEventListener('click', () => {
+            isToggled = !isToggled;
+            const newWidth = isToggled ? '0px' : '640px';
+            outerBlatherbox.style.setProperty('--blatherbox-width', newWidth);
+
+            // Call the function to update --main-centered-width
+            updateMainCenteredWidth();
+
+            // Update border width based on visibility
+            const borderWidth = isToggled ? '0px' : '4px';
+            blatherbox.style.borderWidth = borderWidth;
+        });
+
+        function updateMainCenteredWidth() {
+            const imageWidth = window.getComputedStyle(outerBlatherbox).getPropertyValue('--image-width');
+            const blatherboxWidth = window.getComputedStyle(outerBlatherbox).getPropertyValue('--blatherbox-width');
+            const mainCenteredWidth = `calc(${imageWidth} + ${blatherboxWidth})`;
+            document.documentElement.style.setProperty('--main-centered-width', mainCenteredWidth);
+        }
+    </script>
+
 </body>
 </html>
