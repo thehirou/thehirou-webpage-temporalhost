@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hirou's Webcomic</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <!--HEADER START-->
+    <iframe src="../header.html" width="100%"></iframe>
+    <!--HEADER END-->
+
+    <!-- <div class="separator-v"></div> -->
+
+    <div class="center-title">
+        <div class="page-title">
+            <p>This is the SECOND! page.
+        </div>
+    </div>
+
+    <!-- IDK IF I SHOULD STORE ALL THIS center-page HTML INTO FILES IN page/n.html AND LOAD THEM WITH IFRAME OR NOT -->
+    <div class="center-page">
+
+        <div class="image-div">
+
+            <img src="../media/test-1.gif" alt="Apfel Mus, looking at a tree that appeared in her dream.">
+
+        </div>
+        
+        <div class="outer-blatherbox" id="outer-blatherbox">
+            <div class="blatherbox" id="blatherbox">
+                <div class="blathertext">
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                    <p class="emilio">SIR LANCELOT: omg it is the SECOND PAGE!!!!!
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BUTTON TO RUN THE NAV/BLATHERBOX SCRIPT -->
+    <div class="button-container">
+        <a href="#" id="leftNav" class="button">Previous Page</a>
+
+        <div class="separator-h"></div>
+    
+        <a id="toggleButton" class="button">Toggle Blatherbox</a>
+    
+        <div class="separator-h"></div>
+    
+        <a href="#" id="rightNav" class="button">Next Page</a>
+    </div>
+
+    <!-- SET DESTINATION URL SCRIPT (THIS CHANGES FROM PAGE TO PAGE) -->
+    <script>
+        const destinationUrls = {
+            left: '1.html',
+            right: '2.html',
+        };
+    </script>
+
+    <!-- SCRIPT TO SAVE NAVIGATION CONSTANTS -->
+    <script src="../scripts/nav-consts.js"></script>
+
+    <!-- SCRIPT TO TOGGLE THE BLATHERBOX TEXT -->
+    <script src="../scripts/toggle-blather.js"></script>
+    
+    <!-- NAVIGATION WITH VK KEYS SCRIPT -->
+    <script src="../scripts/navigation.js"></script>
+
+</body>
+</html>

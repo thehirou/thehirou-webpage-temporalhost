@@ -14,7 +14,7 @@
 
     <div class="center-title">
         <div class="page-title">
-            <p>Page Title
+            <p>Index page
         </div>
     </div>
 
@@ -22,11 +22,13 @@
     <div class="center-page">
 
         <div class="image-div">
-            <!-- <img src="media/test-1.png" alt="Apfel Mus, looking at a tree that appeared in her dream.">
-            <img src="media/test-1.gif" alt="Apfel Mus, looking at a tree that appeared in her dream."> -->
+            <!--
+            <img src="media/test-1.png" alt="Apfel Mus, looking at a tree that appeared in her dream.">
+            <img src="media/test-1.gif" alt="Apfel Mus, looking at a tree that appeared in her dream.">
+            -->
             <video width="640" height="480" controls>
                 <source src="media/test-1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+                Your browser does not support video playback. (lol)
             </video>
         </div>
         
@@ -40,6 +42,7 @@
                     <p class="emilio">TODO: Add manual navigation with hyperlinks
                     <p class="emilio">TODO: Fix header
                     <p class="emilio">TODO: Add footer
+                    <p class="emilio">TODO: Change those ugly ass buttons
                     <p class="emilio">TODO: Change font
                     <p class="emilio">TODO: Lorem ipsum
                     <p class="emilio">TODO: Lorem ipsum
@@ -71,7 +74,7 @@
 
     </div>
 
-    <!-- BUTTON TO RUN THE FOLLOWING SCRIPT -->
+    <!-- BUTTON TO RUN THE NAV/BLATHERBOX SCRIPT -->
     <div class="button-container">
         <a href="#" id="leftNav" class="button">Previous Page</a>
 
@@ -84,26 +87,20 @@
         <a href="#" id="rightNav" class="button">Next Page</a>
     </div>
 
-    <!-- SET DESTINATION URL SCRIPT -->
+    <!-- SET DESTINATION URL SCRIPT (THIS CHANGES FROM PAGE TO PAGE) -->
     <script>
         const destinationUrls = {
             left: 'index.html',
             right: 'page/1.html',
         };
-    
-        const rightNav = document.getElementById('rightNav');
-        rightNav.href = destinationUrls.right;
-    
-        const leftNav = document.getElementById('leftNav');
-        leftNav.href = destinationUrls.left;
- 
     </script>
 
+    <!-- SCRIPT TO SAVE NAVIGATION CONSTANTS -->
+    <script src="scripts/nav-consts.js"></script>
 
-    
     <!-- SCRIPT TO TOGGLE THE BLATHERBOX TEXT -->
     <script src="scripts/toggle-blather.js"></script>
-
+    
     <!-- NAVIGATION WITH VK KEYS SCRIPT -->
     <script src="scripts/navigation.js"></script>
 
