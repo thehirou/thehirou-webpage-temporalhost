@@ -1,5 +1,4 @@
-// script.js
-
+// GOTTA STUDY THIS CODE LATER BECAUSE I HAVE NO IDEA HOW IT REALLY WORKS
 const outerBlatherbox = document.getElementById('outer-blatherbox');
 const blatherbox = document.getElementById('blatherbox');
 const toggleButton = document.getElementById('toggleButton');

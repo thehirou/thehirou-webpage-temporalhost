@@ -1,7 +1,9 @@
 /*VARIABLES*/
 
 :root {
-    --header-height: 50px;
+    --header-height: 30px;
+
+    --transition-speed: 0.5s;
 
     --image-width: 640px;
     --image-height: 480px;
@@ -9,12 +11,10 @@
     --blatherbox-width: 640px;
     --blatherbox-height: 480px;
 
-    --transition-speed: 0.5s;
-
-    --blather-box-text-separation: 30px;
-
     --blathertext-width: calc(var(--blatherbox-width) - var(--blather-box-text-separation));
     --blathertext-height: calc(var(--blatherbox-height) - var(--blather-box-text-separation));
+
+    --blather-box-text-separation: 30px;
 
     --main-centered-width: calc(var(--image-width) + var(--blatherbox-width));
 
@@ -27,11 +27,11 @@
 
 body {
     font-family: "Courier New", Courier, monospace;
-    background-color: blue;
+    background-color: rgb(141, 141, 120);
     padding: 0;
     margin: 0;
-    background-image: url('media/bg-tile.png');
-    background-repeat: repeat;
+    /* background-image: url('media/bg-tile.png');
+    background-repeat: repeat; */
 }
 
 /*HEADER CSS*/
@@ -39,13 +39,19 @@ body {
 .header-box{
     width: 100%;
     height: var(--header-height);
-    background-color: rgb(61, 4, 4);
+    background-color: rgb(41, 41, 41);
     color: white;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }
+
+.header-box a {
+    color: rgb(184, 184, 184);
+  }
 
 /*IFRAME*/
 
@@ -89,6 +95,8 @@ button {
     width: 640px;
     height: 480px;
     background-color: red;
+
+    transition: left var(--transition-speed);
 }
 
 .outer-blatherbox{
@@ -127,6 +135,29 @@ button {
     margin: 0;
     padding: var(--distance-between-blather-linebreaks);
     line-height: var(--blather-line-height);
+}
+
+/*TITLE TEXT*/
+
+.center-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title{
+    width: var(--main-centered-width); /*SAME AS CENTER-PAGE, THE DIV THAT STORES IMAGE AND BLATHER*/
+    height: 60px;
+    background-color: beige;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    transition: width var(--transition-speed);
 }
 
 /*CHARACTER COLOR CODES*/
