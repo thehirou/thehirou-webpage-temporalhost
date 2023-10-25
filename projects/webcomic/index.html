@@ -86,15 +86,17 @@
 
         <!-- BUTTON TO RUN THE NAV/BLATHERBOX SCRIPT -->
         <div class="button-container">
-            <a href="#" id="leftNav" class="button">Previous Page</a>
+            <a href="#" id="leftNav" class="button"><---</a>
 
+            <div class="separator-h"></div>
             <div class="separator-h"></div>
         
             <a id="toggleButton" class="button">Toggle Blatherbox</a>
         
             <div class="separator-h"></div>
+            <div class="separator-h"></div>
         
-            <a href="#" id="rightNav" class="button">Next Page</a>
+            <a href="#" id="rightNav" class="button">---></a>
         </div>
 
         </div>
@@ -113,6 +115,10 @@
     <!-- SCRIPT TO SAVE NAVIGATION CONSTANTS -->
     <script src="scripts/nav-consts.js"></script>
 
+    <!-- IF TRUE, THE PAGE SHOWS ON LOAD NO BLATHERBOX, USUALLY SET THIS TO TRUE IF THERE IS NO TEXT (THIS CHANGES FROM PAGE TO PAGE)-->
+    <script>let isToggled = true;</script> 
+    <!-- IF TRUE, THE PAGE LETS YOU OPEN THE BLATHERBOX, EVERYTIME THIS IS SET TO FALSE isToggled SHOULD BE TRUE (EXCEPT SPECIAL CASES)-->
+    <script>let canToggle = true;</script> 
     <!-- SCRIPT TO TOGGLE THE BLATHERBOX TEXT -->
     <script src="scripts/toggle-blather.js"></script>
     
