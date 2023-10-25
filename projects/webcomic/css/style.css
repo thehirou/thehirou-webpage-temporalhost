@@ -236,8 +236,16 @@ iframe {
 
 /*CHARACTER COLOR CODES*/
 
+.center{
+    text-align: center;
+}
+
+.text-black{
+    color:  #000000;
+}
+
 .apfel {
-    color: #b84e40;
+    color: #bd1d08;
   }
 
 .kase {

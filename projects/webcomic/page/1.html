@@ -18,7 +18,7 @@
     <div class="center-title">
         <div class="page-title">
         <div class="page-title-text">
-            <p>1.
+            <p>Sinesperia
         </div>
         </div>
     </div>
@@ -27,52 +27,17 @@
     <div class="center-page">
 
         <div class="image-div">
-            <!--
-            <img src="media/test-1.png" alt="Apfel Mus, looking at a tree that appeared in her dream.">
-            <img src="media/test-1.gif" alt="Apfel Mus, looking at a tree that appeared in her dream.">
-            -->
-            <video width="640" height="480" controls>
-                <source src="../media/test-1.mp4" type="video/mp4">
-                Your browser does not support video playback. (lol)
-            </video>
+            <img src="panel/1.png">
         </div>
         
         <div class="outer-blatherbox" id="outer-blatherbox">
             <div class="blatherbox" id="blatherbox">
                 <div class="blathertext">
-                    <p class="emilio">NOTE: Supposedly, here's where the text goes
-                    <p class="emilio">TODO: Add arrow key navigation
-                    <p class="emilio">TODO: Improve graphics
-                    <p class="emilio">TODO: If index page is accessed, redirect to latest published page
-                    <p class="emilio">TODO: Add manual navigation with hyperlinks
-                    <p class="emilio">TODO: Fix header
-                    <p class="emilio">TODO: Add footer
-                    <p class="emilio">TODO: Change those ugly ass buttons
-                    <p class="emilio">TODO: Change font
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
-                    <p class="emilio">TODO: Lorem ipsum
+                    <p class="text-black center">A young woman stands in her bedroom. It just so happens that today, the 20th of January, 3024, is this young woman's birthday.
+                    <br><br>
+                    <p class="text-black center">Your name is Apfel Mus, you love sleeping, pizza topped with apple pudding and going on adventures. However, your mentor remains quite skeptical about the dangers in the area.
+                    <br><br>
+                    <p class="text-black center">Consequently, the only adventures you can currently indulge in are those found within the books that are oddly scattered throughout a nearby forest.
                 </div>
             </div>
         </div>
@@ -86,15 +51,17 @@
 
         <!-- BUTTON TO RUN THE NAV/BLATHERBOX SCRIPT -->
         <div class="button-container">
-            <a href="#" id="leftNav" class="button">Previous Page</a>
+            <a href="#" id="leftNav" class="button"><---</a>
 
+            <div class="separator-h"></div>
             <div class="separator-h"></div>
         
             <a id="toggleButton" class="button">Toggle Blatherbox</a>
         
             <div class="separator-h"></div>
+            <div class="separator-h"></div>
         
-            <a href="#" id="rightNav" class="button">Next Page</a>
+            <a href="#" id="rightNav" class="button">---></a>
         </div>
 
         </div>
@@ -113,6 +80,10 @@
     <!-- SCRIPT TO SAVE NAVIGATION CONSTANTS -->
     <script src="../scripts/nav-consts.js"></script>
 
+    <!-- IF TRUE, THE PAGE SHOWS ON LOAD NO BLATHERBOX, USUALLY SET THIS TO TRUE IF THERE IS NO TEXT (THIS CHANGES FROM PAGE TO PAGE)-->
+    <script>let isToggled = false;</script> 
+    <!-- IF TRUE, THE PAGE LETS YOU OPEN THE BLATHERBOX, EVERYTIME THIS IS SET TO FALSE isToggled SHOULD BE TRUE (EXCEPT SPECIAL CASES)-->
+    <script>let canToggle = true;</script> 
     <!-- SCRIPT TO TOGGLE THE BLATHERBOX TEXT -->
     <script src="../scripts/toggle-blather.js"></script>
     
