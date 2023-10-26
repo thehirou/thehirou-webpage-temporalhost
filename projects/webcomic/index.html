@@ -47,8 +47,8 @@
             <img src="media/test-1.png" alt="Apfel Mus, looking at a tree that appeared in her dream.">
             <img src="media/test-1.gif" alt="Apfel Mus, looking at a tree that appeared in her dream.">
             -->
-            <video width="640" height="480" controls>
-                <source src="media/test-1.mp4" type="video/mp4">
+            <video width="640" height="480" autoplay muted>
+                <source src="page/panel/index.mp4" type="video/mp4">
                 Your browser does not support video playback. (lol)
             </video>
         </div>
@@ -56,6 +56,7 @@
         <div class="outer-blatherbox" id="outer-blatherbox">
             <div class="blatherbox" id="blatherbox">
                 <div class="blathertext">
+                    <p class="emilio">NEWS: I started making this the 24th of October, 2023
                     <p class="emilio">NOTE: Supposedly, here's where the text goes
                     <p class="emilio">TODO: If index page is accessed, redirect to latest published page (Or maybe don't)
                     <p class="emilio">TODO: Add footer
@@ -89,7 +90,7 @@
 
     </div>
 
-    <div class="date-time"><p>25-OCT-2023</p></div>
+    <div class="date-time"><p>24-OCT-2023</p></div>
 
     <div class="center-nav">
         <div class="background-alt">
@@ -114,6 +115,15 @@
 
     </div>
 
+    <!-- IF YOU WANT TO OVERWRITE STYLE OVER A SPECIFIC PAGE JUST REWRITE THE DESIRED NEW STYLE DOWN HERE (MAINLY WILL BE USED FOR PAGE COLORS) -->
+    <style>
+        :root{
+            --color-light:  #00a000;
+            --color-half:   #000000;
+            --color-dark:   #000000;
+        }
+    </style>
+
     <!-- SET DESTINATION URL SCRIPT (THIS CHANGES FROM PAGE TO PAGE) -->
     <script>
         const destinationUrls = {
@@ -126,7 +136,7 @@
     <script src="scripts/nav-consts.js"></script>
 
     <!-- IF TRUE, THE PAGE SHOWS ON LOAD NO BLATHERBOX, USUALLY SET THIS TO TRUE IF THERE IS NO TEXT (THIS CHANGES FROM PAGE TO PAGE)-->
-    <script>let isToggled = false;</script> 
+    <script>let isToggled = true;</script> 
     <!-- IF TRUE, THE PAGE LETS YOU OPEN THE BLATHERBOX, EVERYTIME THIS IS SET TO FALSE isToggled SHOULD BE TRUE (EXCEPT SPECIAL CASES)-->
     <script>let canToggle = true;</script> 
     <!-- SCRIPT TO TOGGLE THE BLATHERBOX TEXT -->
