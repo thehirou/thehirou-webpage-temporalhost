@@ -27,9 +27,11 @@
     --color-dark: #574436;
 */
 
-    --color-light: #d8d8d8;
-    --color-half: #838383;
-    --color-dark: #4e4e4e;
+    --random-seed: 0.5; /* Initial seed value, you can change this */
+    --hue: calc(var(--random-seed) * 360);
+    --color-light: hsl(var(--hue),      30%, 50%);
+    --color-half: hsl(var(--hue),       30%, 33%);
+    --color-dark: hsl(var(--hue),       30%, 20%);
 
     --color-black: #000000;
 
@@ -185,7 +187,7 @@ iframe {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
     margin-top: 15px;
     margin-bottom: 15px;
 }
