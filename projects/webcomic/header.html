@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>My Web Page</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <style>
+<div class="header-box">
+    <a href="https://www.twitter.com/TheHirou"  target="_blank">        Twitter</a>&nbsp;-&nbsp;
+    <a href="https://www.thehirou.com"          target="_blank">        TheHirou.com</a>&nbsp;-&nbsp;
+    <a href="https://www.ko-fi.com/thehirou"    target="_blank">        KoFi</a>&nbsp;-&nbsp;
+    <a href="#" target="_blank" id="latestPageLink">Latest Page</a>&nbsp;-&nbsp;
+    <a href="#" onclick="changeHue()">Page Color</a>
+    <script>
+        var latestPageLink = document.getElementById("latestPageLink");
+        latestPageLink.href = latestPageURL;
+    </script>
+</div>
 
-    </style>
-</head>
-<body>
-
-    <!-- THIS SEEMS USELES TBF -->
-    
-    <!-- NOTE: HUH, YOU CAN USE IFRAME TO INSERT AN ACTUAL WEBSITE INSIDE A WEBSITE, USE FOR SOMETHING INTERESTING LATER -->
-    <script src="scripts/scripts.js"></script>
-</body>
-</html>
+<!-- IDK HOW TO LOAD THIS INTO EVERY HTML AND HAVING TO COPY AND PASTE IT EVERYWHERE EVERYTIME I UPDATE IT IS A PAIN IN THE ASS -->

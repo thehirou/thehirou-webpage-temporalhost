@@ -1,3 +1,4 @@
 //FUCKING HELL I HAVE LIKE 10 DIFFERENT JS FILES EVERYWHERE WHY AM I DOING IT LIKE THIS
 var latestPageURL = "3.html";
 var latestPageURL_FROMINDEX = "page/3.html";
+
