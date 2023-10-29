@@ -31,18 +31,21 @@ headerChange.querySelector(".new-header-01-slash").textContent=accessTestHeader.
 */
 
 
-//DATA
-const dataPromise = await fetch("data.json")
-const data = await dataPromise.json()
+//FOOTER
+const footerPromise = await fetch("/thehirou-webpage-temporalhost/projects/webcomic/footer.json")
+const footer = await footerPromise.json()
+const footerFetched = document.querySelector(".footer-div")
 
+const footerContent = footer[0];
+const accessFooterContent = footerContent;
+footerFetched.querySelector(".footer-text").textContent=accessFooterContent.text;
+footerFetched.querySelector(".footer-text").href=accessFooterContent.destination;
 
 
 //NEWS
-const newsPromise = await fetch("data.json")
+const newsPromise = await fetch("/thehirou-webpage-temporalhost/projects/webcomic/data.json")
 const news = await newsPromise.json()
 const blatherNews = document.querySelector(".blather-news")
-
-console.log(news);
 
 const blatherBoxContent = news[0];
 const accessBlatherBoxContent = blatherBoxContent;
