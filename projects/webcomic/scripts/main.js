@@ -7,7 +7,7 @@ const data = await dataPromise.json()
 
 //NEWS
 
-const newsPromise = await fetch("https://pastebin.com/raw/s3mWU9aV")
+const newsPromise = await fetch("data.json")
 const news = await newsPromise.json()
 const blatherNews = document.querySelector(".blather-news")
 
