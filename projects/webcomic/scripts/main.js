@@ -2,7 +2,7 @@
 const headerPromise = await fetch("https://thehirou.com/projects/webcomic/header.json")
 const header = await headerPromise.json()
 const headerChange = document.querySelector(".header-box")
- q  
+ 
 const twitterHeader = header[0];
 const accessTwitterHeader = twitterHeader;
 headerChange.querySelector(".twitter-header").textContent=accessTwitterHeader.name;
