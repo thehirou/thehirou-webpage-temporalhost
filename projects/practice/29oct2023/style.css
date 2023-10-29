@@ -1,0 +1,132 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #567544;
+}
+
+.class01{
+    background-color: #4fc21a;
+    color: white;
+    padding: 50px 30px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.class01:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 10px;
+    background: linear-gradient(to left, rgb(179, 255, 0), #4fc21a);
+}
+
+.class01:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 10px;
+    background: linear-gradient(to right, rgb(179, 255, 0), #4fc21a);
+}
+
+.class01 h1{
+    font-weight: normal;
+    font-size: 6rem;
+    margin: 0;
+}
+
+
+.class01 h2{
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.filternav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.filternav a{
+    text-decoration: none;
+    padding: 9px;
+    color: #4fc21a;
+    border: 1px solid #5db634;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.animals{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.animal-card{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.animal-card-photo{
+    order: 1;
+    grid-row: 1;
+    overflow: hidden;
+}
+
+.animal-card-photo img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.animal-card:hover img{
+    transform: rotate(10deg) scale(1.2);
+}
+
+.animal-card-text{
+    padding: 20px 25px;
+}
+
+.animal-card-text h3{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.animal-card-text small{
+    color: gray;
+}
+
+.animal-card-text p{
+    margin: .8rem 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.adpt-btn{
+    background: linear-gradient(#567544, #4fc21a);
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    display: inline-block;  
+}
+
+.adpt-btn:hover{
+    background: linear-gradient(#4fc21a, #567544);
+}

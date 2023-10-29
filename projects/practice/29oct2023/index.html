@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption List</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <div class="class01">
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+    </div>
+
+    <div class="filternav">
+        <a href="#">All animals</a>
+        <a href="#">Only dogs</a>
+        <a href="#">Only cats</a>
+        <a href="#">Only rats</a>
+    </div>
+
+    <div class="animals">
+    </div>
+
+    <template id="animal-card"> 
+        <div class="animal-card">
+            <div class="animal-card-text">
+                <h3>Munchie</h3>
+                <small><span class="age">3 months old</span> - <span class="species">Rat</span></small>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi at culpa cupiditate sequi repudiandae? Eveniet dolore nobis alias a id. Eos assumenda cum voluptatibus ea reiciendis, perspiciatis nulla eveniet numquam.</p>
+                <a href="#" class="adpt-btn">Adopt <span class="name"></span></a>
+            </div>
+            <div class="animal-card-photo">
+                <img src="https://learnwebcode.github.io/pet-adoption-data/photos/bunny3.webp" alt="A bunny">
+            </div>
+        </div>
+    </template>
+
+</body>
+</html>
