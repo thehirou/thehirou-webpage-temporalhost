@@ -1,8 +1,8 @@
 //HEADER
-const headerPromise = await fetch("/thehirou-webpage-temporalhost/projects/webcomic/header.json")
+const headerPromise = await fetch("https://thehirou.com/projects/webcomic/header.json")
 const header = await headerPromise.json()
 const headerChange = document.querySelector(".header-box")
-
+ q  
 const twitterHeader = header[0];
 const accessTwitterHeader = twitterHeader;
 headerChange.querySelector(".twitter-header").textContent=accessTwitterHeader.name;
@@ -32,7 +32,7 @@ headerChange.querySelector(".new-header-01-slash").textContent=accessTestHeader.
 
 
 //FOOTER
-const footerPromise = await fetch("/thehirou-webpage-temporalhost/projects/webcomic/footer.json")
+const footerPromise = await fetch("https://thehirou.com/projects/webcomic/footer.json")
 const footer = await footerPromise.json()
 const footerFetched = document.querySelector(".footer-div")
 
@@ -43,7 +43,7 @@ footerFetched.querySelector(".footer-text").href=accessFooterContent.destination
 
 
 //NEWS
-const newsPromise = await fetch("/thehirou-webpage-temporalhost/projects/webcomic/data.json")
+const newsPromise = await fetch("https://thehirou.com/projects/webcomic/data.json")
 const news = await newsPromise.json()
 const blatherNews = document.querySelector(".blather-news")
 
