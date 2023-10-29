@@ -286,3 +286,11 @@ iframe {
 .book-indent{
     text-indent: 2em;
 }
+
+.text-news-h1{
+    font-family: 'Merriweather', serif;
+}
+
+.text-news-h2{
+    font-family: 'Merriweather', serif;
+}
