@@ -1,28 +1,5 @@
-//DATA
-
-const dataPromise = await fetch("data.json")
-const data = await dataPromise.json()
-
-
-
-//NEWS
-
-const newsPromise = await fetch("data.json")
-const news = await newsPromise.json()
-const blatherNews = document.querySelector(".blather-news")
-
-console.log(news);
-
-const blatherBoxContent = news[0];
-const accessBlatherBoxContent = blatherBoxContent;
-blatherNews.querySelector(".text-news-h1").textContent=accessBlatherBoxContent.date;
-blatherNews.querySelector(".text-news-h2").textContent=accessBlatherBoxContent.message;
-
-
-
 //HEADER
-
-const headerPromise = await fetch("header.json")
+const headerPromise = await fetch("/thehirou-webpage-temporalhost/projects/webcomic/header.json")
 const header = await headerPromise.json()
 const headerChange = document.querySelector(".header-box")
 
@@ -52,3 +29,25 @@ headerChange.querySelector(".new-header-01").textContent=accessTestHeader.name;
 headerChange.querySelector(".new-header-01").href=accessTestHeader.destination;
 headerChange.querySelector(".new-header-01-slash").textContent=accessTestHeader.slash;
 */
+
+
+//DATA
+const dataPromise = await fetch("data.json")
+const data = await dataPromise.json()
+
+
+
+//NEWS
+const newsPromise = await fetch("data.json")
+const news = await newsPromise.json()
+const blatherNews = document.querySelector(".blather-news")
+
+console.log(news);
+
+const blatherBoxContent = news[0];
+const accessBlatherBoxContent = blatherBoxContent;
+blatherNews.querySelector(".text-news-h1").textContent=accessBlatherBoxContent.date;
+blatherNews.querySelector(".text-news-h2").textContent=accessBlatherBoxContent.message;
+
+
+
