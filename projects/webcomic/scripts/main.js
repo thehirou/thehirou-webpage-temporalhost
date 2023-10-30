@@ -30,7 +30,6 @@ headerChange.querySelector(".new-header-01").href=accessTestHeader.destination;
 headerChange.querySelector(".new-header-01-slash").textContent=accessTestHeader.slash;
 */
 
-
 //FOOTER
 const footerPromise = await fetch("https://thehirou.com/projects/webcomic/footer.json")
 const footer = await footerPromise.json()

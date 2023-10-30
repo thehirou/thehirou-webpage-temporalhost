@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Cousine&family=Merriweather:wght@300&display=swap'); */
+/*LOOKS LIKE THE COUSINE FON'T WASN'T ACTUALLY LOADING SO I'M JUST USING MONOSPACE, EITHER WAY I ALREADY LIKE HOW MONOSPACE LOOKS SO I'M NOT GOING TO CHANGE IT NOW LOL*/
+
 /*VARIABLES*/
 
 :root {
@@ -44,9 +47,6 @@
 
 /*BODY*/
 
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Cousine&family=Merriweather:wght@300&display=swap');
-
-/*LOOKS LIKE THE COUSINE FON'T WASN'T ACTUALLY LOADING SO I'M JUST USING MONOSPACE, EITHER WAY I ALREADY LIKE HOW MONOSPACE LOOKS SO I'M NOT GOING TO CHANGE IT NOW LOL*/
 
 body {
     font-family: 'Cousine', monospace;
