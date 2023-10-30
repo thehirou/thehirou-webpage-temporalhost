@@ -21,6 +21,12 @@ headerChange.querySelector(".kofi-header").textContent=accessKofiHeader.name;
 headerChange.querySelector(".kofi-header").href=accessKofiHeader.destination;
 headerChange.querySelector(".kofi-slash").textContent=accessKofiHeader.slash;
 
+const latestPage = header[3];
+const accessLatestPage = latestPage;
+headerChange.querySelector(".new-header-08").textContent=accessLatestPage.name;
+headerChange.querySelector(".new-header-08").href=accessLatestPage.destination;
+headerChange.querySelector(".new-header-08-slash").textContent=accessLatestPage.slash;
+
 /*
 IF I WANT TO ADD MORE THINGS TO THE HEADER JUST CHANGE THIS SCRIPT ACCORDINGLY
 const testHeader = header[3];
@@ -29,17 +35,6 @@ headerChange.querySelector(".new-header-01").textContent=accessTestHeader.name;
 headerChange.querySelector(".new-header-01").href=accessTestHeader.destination;
 headerChange.querySelector(".new-header-01-slash").textContent=accessTestHeader.slash;
 */
-
-//FOOTER
-const footerPromise = await fetch("https://thehirou.com/projects/webcomic/footer.json")
-const footer = await footerPromise.json()
-const footerFetched = document.querySelector(".footer-div")
-
-const footerContent = footer[0];
-const accessFooterContent = footerContent;
-footerFetched.querySelector(".footer-text").textContent=accessFooterContent.text;
-footerFetched.querySelector(".footer-text").href=accessFooterContent.destination;
-
 
 //NEWS
 const newsPromise = await fetch("https://thehirou.com/projects/webcomic/data.json")

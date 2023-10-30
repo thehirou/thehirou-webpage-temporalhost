@@ -2,7 +2,7 @@
     {"name": "Twitter",        "slash":" - ",       "destination": "https://twitter.com/thehirou"},
     {"name": "TheHirou.com",   "slash":" - ",       "destination": "https://thehirou.com/"},
     {"name": "Donate",         "slash":" - ",       "destination": "https://ko-fi.com/thehirou"},
-    {"name": "Test Header",    "slash":" - ",       "destination": "https://google.com/"},
+    {"name": "Latest Page",    "slash":" - ",       "destination": "https://thehirou.com/projects/webcomic/page/14.html"},
     {"name": "2",              "slash":" - ",       "destination": "https://twitter.com/thehirou"},
     {"name": "3",              "slash":" - ",       "destination": "https://twitter.com/thehirou"},
     {"name": "4",              "slash":" - ",       "destination": "https://twitter.com/thehirou"},

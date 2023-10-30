@@ -313,6 +313,10 @@ iframe {
     font-weight: bold;
 }
 
+.footer-text:before{
+    content: "© TheHirou.com 2023";
+}
+
 .footer-text{
     text-decoration: none;
 }
