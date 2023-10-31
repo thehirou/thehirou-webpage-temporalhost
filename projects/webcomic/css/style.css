@@ -171,6 +171,13 @@ iframe {
     font-weight: bold;
 }
 
+.date-time a{
+    color: var(--color-light);
+    font-size: 9px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
 .image-div{
     width: 640px;
     height: 480px;
@@ -259,6 +266,27 @@ iframe {
     display: flex;
     margin-top: -10px;
     margin-bottom: -10px;
+}
+
+/*AUTHOR NOTES*/
+
+.author-note{
+    width: 640px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.author-note p{
+    color: #fff
+}
+
+/*INDENTS*/
+.no-indent{
+    text-indent: 0px;
+}
+
+.indent{
+    text-indent: 2rem;
 }
 
 /*CHARACTER COLOR CODES*/
