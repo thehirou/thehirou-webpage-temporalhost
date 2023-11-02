@@ -84,6 +84,7 @@ iframe {
     border: 0px;
     display: block;
 }
+
 /*MISCELANEOUS*/
 
 .separator-h {
@@ -274,10 +275,29 @@ iframe {
     width: 640px;
     padding: 20px;
     margin: 20px;
+    color: #ffffff
 }
 
-.author-note p{
-    color: #fff
+.author-note hr{
+    border-color: #8d8d8d;
+}
+
+.a-p-title{
+    font-size: 2rem;
+}
+
+.a-p-dialog-box{
+    background-color: #dadada;
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-style: none;
+    border-color: #000000;
+    border-width: 2px;
+}
+
+.a-p-dialog-box p{
+    margin: 4px 0px 4px 0px;
 }
 
 /*INDENTS*/
@@ -299,12 +319,16 @@ iframe {
     color:  #000000;
 }
 
-.apfel {
-    color: #bd1d08;
+.text-gray{
+    color:  #4e4e4e;
+}
+
+.apfel{
+    color: #ee1c00;
   }
 
 .kase {
-    color: #1c8a25;
+    color: #cf6c10;
   }
 
 .emilio {
