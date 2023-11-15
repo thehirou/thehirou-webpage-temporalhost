@@ -19,6 +19,11 @@ hr{
     border-width: 1px;
 }
 
+.footer{
+    font-size: 12px;
+    font-style: italic;
+}
+
 p {
     font-weight: bold;
     color: #333;
