@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin: 0px;
     text-align: center;
     background: linear-gradient(to bottom, #80c6de, #ffffff); /* Fondo con gradiente azul claro */
@@ -47,8 +47,9 @@ img {
 
 
 button {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     padding: 20px 30px;
-    font-size: 30px;
+    font-size: 24px;
     background-color: #4caf50;
     color: white;
     border: none;
