@@ -3,6 +3,12 @@ body{
     /* background-color: rgb(7, 7, 7); */
 }
 
+.business{
+  opacity: 0.4;
+  font-size: 7px;
+  }
+
+
 .container {
 
     position: absolute;
@@ -24,6 +30,7 @@ body{
   top: 380px;
   width: 100%;
 }
+
 
 .carousel-container {
     display: flex;
@@ -663,12 +670,6 @@ div#apfel-text{
   }
 
 
-
-
-
-
-
-
   #text-1 {
     margin-top: 0px;
     text-align: center;
@@ -688,6 +689,7 @@ div#apfel-text{
     width: 200px;
   }
   
+
   @keyframes shake {
     0% {
       transform: translate(0, 0) rotate(0);
@@ -735,4 +737,3 @@ div#apfel-text{
   }
 
 
-  
