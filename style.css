@@ -139,7 +139,7 @@ div#masking-right{
 
   div#thehirou-text{
     position: absolute;
-    top: 110px;
+    top: 105px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -147,7 +147,7 @@ div#masking-right{
   div#thehirou-text p{
     font-family: "CustomFont", sans-serif;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   div#workinprogress-2-text{
@@ -332,10 +332,10 @@ div#masking-right{
 
   div#text-1{
     position: absolute;
-    top: 195px;
+    top: 175px;
     left: 50%;
     transform: translateX(-50%);
-    line-height: 15px;
+    line-height: 17px;
   }
 
   .text-1-class{
@@ -350,7 +350,7 @@ div#masking-right{
     font-family: "CustomFont", sans-serif;
     color: rgb(116, 116, 116);
     font-size: 9px;
-    opacity: 0; /*Change value to 1 in 2024*/
+    opacity: 1; /*Change value to 1 in 2024*/
   }
 
   div#hiroupic{
