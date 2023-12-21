@@ -332,16 +332,25 @@ div#masking-right{
 
   div#text-1{
     position: absolute;
-    top: 190px;
+    top: 195px;
     left: 50%;
     transform: translateX(-50%);
+    line-height: 15px;
   }
 
-  div#text-1 p{
+  .text-1-class{
     width: 800px;
     font-family: "CustomFont", sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 12px;
+  }
+
+ .text-1-former{
+    width: 800px;
+    font-family: "CustomFont", sans-serif;
+    color: rgb(116, 116, 116);
+    font-size: 9px;
+    opacity: 0; /*Change value to 1 in 2024*/
   }
 
   div#hiroupic{
