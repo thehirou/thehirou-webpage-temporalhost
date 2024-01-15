@@ -241,10 +241,6 @@ div#masking-right{
 }
 
 
-
-
-
-
   div#text-wip p{
     text-align: center;
     font-family: "CustomFont", sans-serif;
@@ -260,6 +256,14 @@ div#masking-right{
 
 .separator{
   height: 150px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  }
+
+.separator-smaller{
+  height: 10px;
   background-color: transparent;
   border: none;
   margin: 0;
@@ -324,6 +328,49 @@ div#masking-right{
     border: 2px solid black; 
     outline: 1px solid white;
   }
+
+/*PORTFOLIO START*/
+
+  div#portfolio-div {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 24px;
+    text-align: center; /* Add this line to center the text */
+  }
+  
+  .portfolio-header{
+    color: white;
+    font-family: "CustomFont", sans-serif;
+    font-size: 25px;
+  }
+
+  .portfolio-text-1{
+    margin-top: -10px;
+    font-family: "CustomFont", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+  }
+
+
+  figcaption {
+    font-family: "CustomFont", sans-serif;
+  }
+
+/*PORTFOLIO END*/
+
+/*GALLERY CAPTION START*/
+
+        .modal .caption {
+            margin-top: 10px;
+            font-family: "CustomFont", sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+        }
+
+/*GALLERY CAPTION END*/
+
 
 
   div#fanart audio{
