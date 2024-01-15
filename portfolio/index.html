@@ -1,269 +1,245 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Hirou's Portfolio</title>
-	
-	 <!-- <script> -->
-    <!-- // Check if the user is accessing from a mobile device -->
-    <!-- var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); -->
+    <link rel="icon" type="image/png" href="https://thehirou.com/media/logo.png">
+    <meta charset="UTF-8">
+    <title>Ocram Ratte: Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
 
-    <!-- // Redirect to a different URL if it's a mobile device -->
-    <!-- if (isMobile) { -->
-      <!-- window.location.href = 'mobile.html'; -->
-    <!-- } -->
-	
-  <!-- </script> -->
-  
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="../media/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Ocram Ratte" />
+    <meta name="description" content="Game developer, music composer, mouse in disguise." />
 
-<!-- Primary Meta Tags -->
-<meta name="title" content="TheHirou's Portfolio" />
-<meta name="description" content="Game developer, music composer, mouse in disguise." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thehirou.com" />
+    <meta property="og:title" content="Ocram Ratte" />
+    <meta property="og:description" content="Game developer, music composer, mouse in disguise." />
+    <meta property="og:image" content="https://thehirou.com/media/vhs_meta_card.png" />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://thehirou.com" />
-<meta property="og:title" content="TheHirou" />
-<meta property="og:description" content="Game developer, music composer, mouse in disguise." />
-<meta property="og:image" content="https://thehirou.com/media/vhs_meta_card.png" />
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://thehirou.com/" />
-<meta property="twitter:title" content="TheHirou" />
-<meta property="twitter:description" content="Game developer, music composer, mouse in disguise." />
-<meta property="twitter:image" content="https://thehirou.com/media/vhs_meta_card.png" />
-
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://thehirou.com/" />
+    <meta property="twitter:title" content="Ocram Ratte" />
+    <meta property="twitter:description" content="Game developer, music composer, mouse in disguise." />
+    <meta property="twitter:image" content="https://thehirou.com/media/vhs_meta_card.png" />
 </head>
+
 <body>
+    <style>
+    * {
+	box-sizing: border-box;
+    }
 
-    <div id="separator"></div>
+    body {
+	margin: 0;
+	padding: 1rem;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(0, 0, 0);
+    }
 
-    <div class="parent">
-        <div class="child">
-            <p class="textTop">Ocram's portfolio</p>
-            <p class="textBottom">MAKING MUSIC, GAMES AND... THINGS?</p>
-        </div>
-    </div>
+    img {
+	width: 100%;
+	display: block;
+	aspect-ratio: 4/3;
+	object-fit: cover;
+	transition: transform 1000ms;
+}
 
-    <div id="separator"></div>
-    <div id="separator"></div>
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	max-width: 100%;
+	width: 70rem;
+}
 
-	<div class="container">
-		<div class="grid">
-			<div class="portfolio-item-profile">
-				<img class="enlarge-image" data-url="https://thehirou.com" src="img/me.png">
-				<div class="portfolio-item-caption">Who is this guy?</div>
-				<div class="portfolio-item-description">I'm Ocram Ratte, a game developer, music composer, aspiring animator and a guy with way too many hobbies. Formerly known as TheHirou.</div>
-                <div id="separator"></div>
-				<!-- <div class="portfolio-item-language">GML</div> -->
-			</div>
-			<!-- <div class="portfolio-item-ad">
-				<img class="enlarge-image" data-url="https://thehirou.com" src="img/me.png">
-				<div class="portfolio-item-caption">Who is this guy?</div>
-				<div class="portfolio-item-description">I'm Hirou, a game developer, music composer, aspiring programmer and a guy with way too many hobbies.</div>
-                <div id="separator"></div>
-			</div> -->
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/apfel.png">
-				<div class="portfolio-item-caption">Apfel Project</div>
-				<div class="portfolio-item-description">Videogame being independently developed by me, using the GameMaker videogame engine.</div>
-				<div class="portfolio-item-checkout"><a href=https://apfelproject.com>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language GML">GML</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/apfelonline.png">
-				<div class="portfolio-item-caption">Apfel Online</div>
-				<div class="portfolio-item-description">Online chatroom with customizable avatars resembling the aesthetic of my main project, Apfel Project.</div>
-				<div class="portfolio-item-checkout"><a href=https://online.apfelproject.com>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language GML">GML</div>
-			</div>
-			<div class="portfolio-item-project">
-				<img class="enlarge-image" src="img/animation.png">
-				<div class="portfolio-item-caption">Animation portfolio</div>
-				<div class="portfolio-item-description">Recently, I've been studying animation more in depth so I will be archiving everything I do on this playlist.</div>
-				<div class="portfolio-item-checkout"><a href=https://youtube.com/playlist?list=PLbulgaM_pwihrvdiA5n0D1G-FdMnNANCz>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language">PROJECT</div>
-			</div>
-			<div class="portfolio-item-project">
-				<img class="enlarge-image" src="img/translation.png">
-				<div class="portfolio-item-caption">OMORI Fan translation</div>
-				<div class="portfolio-item-description">A fan translation we made in a team to make Omori playable in Spanish.</div>
-				<div class="portfolio-item-checkout"><a href=https://mods.one/mod/omoriespanol>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language GML">PROJECT</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/hirougana.png">
-				<div class="portfolio-item-caption">Hirougana</div>
-				<div class="portfolio-item-description">Small game developed by me to learn the hiragana alphabet.</div>
-				<div class="portfolio-item-checkout"><a href=https://thehirou.itch.io/hirougana>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language GML">GML</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/projects.png">
-				<div class="portfolio-item-caption">Extended Portfolio</div>
-				<div class="portfolio-item-description">Some of the projects that are not listed here can be found here.</div>
-				<div class="portfolio-item-checkout"><a href=https://thehirou.com/projects>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language GML"></div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/gamemaker.png">
-				<div class="portfolio-item-caption">GameMaker custom scripts</div>
-				<div class="portfolio-item-description">Scripts I wrote for GameMaker to make my life easier when coding. (Kind of outdated)</div>
-				<div class="portfolio-item-checkout"><a href=https://github.com/thehirou/GameMaker/tree/main/Why%20Doesn't%20This%20Script%20Exist>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language GML">GML</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/tookay.png">
-				<div class="portfolio-item-caption">Tookay</div>
-				<div class="portfolio-item-description">Proof of concept for a chat software, mainly gui elements and json saving.</div>
-				<div class="portfolio-item-checkout"><a href=https://github.com/thehirou/GameMaker/tree/main/Tookay>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language GML">GML</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/chess.png">
-				<div class="portfolio-item-caption">Chess battle royale</div>
-				<div class="portfolio-item-description">Chess 2.0 featuring an open world map with new pieces like the mouse, the emperor, the warrior and many more.</div>
-				<div class="portfolio-item-checkout"><a href=https://github.com/thehirou/GameMaker/tree/main/Chess%20Battle%20Royale>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language GML">GML</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/dqbe.png">
-				<div class="portfolio-item-caption">Dragon Quest Battle Engine</div>
-				<div class="portfolio-item-description">Almost fully customizable classic Dragon Quest battle engine.</div>
-				<div class="portfolio-item-checkout"><a href=https://github.com/thehirou/GameMaker/tree/main/Dragon%20Quest%20Battle%20Engine>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language GML">GML</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/generation.png">
-				<div class="portfolio-item-caption">2D Procedural Generation</div>
-				<div class="portfolio-item-description">Very early prototype of 2d procedural world generation using a tile rule system.</div>
-				<div class="portfolio-item-checkout"><a href=https://github.com/thehirou/GameMaker/tree/main/Procedural%20Generation>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language GML">GML</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/webcomic.png">
-				<div class="portfolio-item-caption">Webcomic</div>
-				<div class="portfolio-item-description">A page for a webcomic I started making a while ago and abandoned.</div>
-				<div class="portfolio-item-checkout"><a href=https://thehirou.com/projects/comic-story-apfel>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div class="portfolio-item-language GML">HTML & CSS</div>
-			</div>
-			<div class="portfolio-item-project">
-				<img class="enlarge-image" src="img/bandcamp.png">
-				<div class="portfolio-item-caption">My music</div>
-				<div class="portfolio-item-description">Did you know I make music?<br>You didn't??? But I just told you, man!</div>
-				<div class="portfolio-item-checkout"><a href=https://thehirou.bandcamp.com>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-				<div class="portfolio-item-language GML">PROJECT</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/blume.png">
-				<div class="portfolio-item-caption">Blume's webpage</div>
-				<div class="portfolio-item-description">A webpage made for transmedia purposes.</div>
-				<div class="portfolio-item-checkout"><a href=https://apfel.neocities.org>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div class="portfolio-item-language GML">HTML & CSS</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/sinesperia.png">
-				<div class="portfolio-item-caption">Sinesperia</div>
-				<div class="portfolio-item-description">Webcomic I will start updating after I finish the Apfel Project</div>
-				<div class="portfolio-item-checkout"><a href=https://thehirou.com/projects/webcomic>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div class="portfolio-item-language GML">HTML & CSS</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/journal.png">
-				<div class="portfolio-item-caption">Her diary</div>
-				<div class="portfolio-item-description">Someone's journal, archived on the internet.</div>
-				<div class="portfolio-item-checkout"><a href=http://thehirou.com/projects/apfel-diary>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div class="portfolio-item-language GML">HTML & CSS</div>
-			</div>
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/homestuckrandom.png">
-				<div class="portfolio-item-caption">Homestuck username generator</div>
-				<div class="portfolio-item-description">Username generator that generates a username based on the way usernames are displayed in the webcomic Homestuck: "AN: adjectiveNoun". It also uses the colors used in the webcomic.</div>
-				<div class="portfolio-item-checkout"><a href=https://thehirou.com/projects/homestuck-username-generator/>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div class="portfolio-item-language GML">HTML, CSS & JAVASCRIPT</div>
-			</div>
-			<!--
-			<div class="portfolio-item">
-				<img class="enlarge-image" src="img/calculator.png">
-				<div class="portfolio-item-caption">Calculator</div>
-				<div class="portfolio-item-description">The calculator everybody codes to start learning JavaScript. (Link not working)</div>
-				<div class="portfolio-item-checkout"><a href=https://thehirou.github.io/html-experiment-1/javascript.html>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div class="portfolio-item-language GML">HTML, CSS & JAVASCRIPT</div>
-			</div>-->
-			<div class="portfolio-item">
-				<img class="enlarge-image" data-url="https://thehirou.github.io/portfolio" src="img/portfolio.png">
-				<div class="portfolio-item-caption">This website</div>
-				<div class="portfolio-item-description">Gotta squeeze until the last drop am I right?</div>
-				<div class="portfolio-item-checkout"><a href=https://thehirou.com/portfolio>[Check it out ->]</a></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div id="separator"></div>
-                <div class="portfolio-item-language CSS">HTML, CSS & JAVASCRIPT</div>
-			</div>  
-		</div>
-	</div>
-	<script type="text/javascript" src="scripts.js"></script>
+figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+figure::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	background: rgba(0, 0, 0, 0.75);
+	transform-origin: center;
+	opacity: 0;
+	transform: scale(2);
+	transition: opacity 300ms;
+}
+
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    line-height: 30px;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+	padding: 1rem;
+	color: white;
+	font-size: 12px;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 600ms, transform 600ms;
+}
+
+a:is(:hover, :focus) figure::after {
+	opacity: 1;
+}
+
+a:is(:hover, :focus) figcaption {
+	opacity: 1;
+	transition: opacity 600ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	figcaption {
+		transform: translate3d(0, 2rem, 0);
+	}
+	
+	figure::after {
+		border-radius: 50%;
+		opacity: 1;
+		transform: scale(0);
+		transition: transform 900ms;
+	}
+	
+	a:is(:hover, :focus) figure::after {
+		transform: scale(2.5);
+	}
+
+	a:is(:hover, :focus) figcaption {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+		transition: opacity 600ms 400ms, transform 600ms 400ms;
+	}
+
+	a:is(:hover, :focus) img {
+		transform: scale(1.2);
+	}
+}
+    
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXBDY70QMG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-ZXBDY70QMG');
+    </script>
+
+    <div id="portfolio-div">
+        <p class="portfolio-header">Portfolio</p>
+        <p class="portfolio-text-1">Ocram Ratte</p>
+        <div class="separator-smaller"></div>
+        <div class="separator-smaller"></div>
+
+   <ul>
+    <li>
+		<a href="https://music.thehirou.com">
+			<figure>
+				<img src='media/music.png' alt='Placeholder Image'>
+				<figcaption>Music</figcaption>
+			</figure>
+		</a>
+	</li>
+	<li>
+		<a href="https://animation.thehirou.com">
+			<figure>
+				<img src='media/animation.gif' alt='Placeholder Image'>
+				<figcaption>Animation</figcaption>
+			</figure>
+		</a>
+	</li>
+	<li>
+		<a href="https://gallery.thehirou.com">
+			<figure>
+				<img src='media/gallery.png' alt='Placeholder Image'>
+				<figcaption>Drawings</figcaption>
+			</figure>
+		</a>
+	</li>
+	<li>
+		<a href="https://apfelproject.com">
+			<figure>
+				<img src='media/apfelproject.png' alt='Apfel and Kase, from the Apfel Project in front of an alchemical symbol shaped statue.'>
+				<figcaption>Apfel Project<br>TBD</figcaption>
+			</figure>
+		</a>
+	</li>
+    <li>
+		<a href="https://sinesperia.thehirou.com">
+			<figure>
+				<img src='media/sinesperia.png' alt='Sinesperia webcomic title.'>
+				<figcaption>Sinesperia<br>TBD</figcaption>
+			</figure>
+		</a>
+	</li>
+	<li>
+		<a href="https://online.apfelproject.com">
+			<figure>
+				<img src='media/apfelonline.png' alt='3D preview of the lobby from Apfel Project: Online'>
+				<figcaption>Apfel Online<br>2023</figcaption>
+			</figure>
+		</a>
+	</li>
+	<li>
+		<a href="https://thehirou.itch.io/hirougana">
+			<figure>
+				<img src='media/hirougana.png' alt='Screenshot of the game, Hirougana'>
+				<figcaption>Hirougana<br>2021</figcaption>
+			</figure>
+		</a>
+	</li>
+	<li>
+		<a href="https://apfel.neocities.org/">
+			<figure>
+				<img src='media/blumepage.png' alt='Preview of the website.'>
+				<figcaption>Blume's Website<br>2022</figcaption>
+			</figure>
+		</a>
+	</li>
+	<li>
+		<a href="https://thehirou.com/projects/comic-story-apfel/">
+			<figure>
+				<img src='media/apfelwebcomic.png' alt='Panel featured in the webcomic, Blume is surrounded by spagetti.'>
+				<figcaption>Apfel Webcomic<br>2022</figcaption>
+			</figure>
+		</a>
+	</li>
+
+<!-- YOU CAN ADD GIFS, CHANGE SOME TO GIFS -->
+</ul>
+<div class="separator-smaller"></div>
+<div class="separator-smaller"></div>
+<div class="separator-smaller"></div>
+<div class="separator-smaller"></div>
+<div class="separator-smaller"></div>
+<div class="separator-smaller"></div>
+<div class="separator-smaller"></div>
+<div class="separator-smaller"></div>
+<div class="separator-smaller"></div>
+<div class="separator-smaller"></div>
+<div class="separator-smaller"></div>
+<div class="separator-smaller"></div>
+</div>	
+
+
 </body>
 </html>
-<!--
-<div class="portfolio-item-language GML">GML</div>
-<div class="portfolio-item-language HTML">HTML</div>
-<div class="portfolio-item-language CSS">CSS</div>
-<div class="portfolio-item-language JS">JavaScript</div>
