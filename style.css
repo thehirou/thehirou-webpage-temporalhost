@@ -552,12 +552,20 @@ div#masking-right{
     font-size: 16px;
   }
 
+  #discord-container {
+    position: relative;
+  }
+
   div#discord-logo:hover + div#discord-text {
     opacity: 1;
     animation: shake 3s ease-in-out infinite;
     text-shadow: 0 0 10px rgb(255, 255, 255); 
   }
   
+  div#discord-logo:hover + div#discord-container { /*Shit doesn't work*/
+    opacity: 0;
+  }
+
   div#discord-logo{
     opacity: 0.5;
     position: absolute;
@@ -570,6 +578,27 @@ div#masking-right{
     filter: drop-shadow(0 0 10px white) brightness(150%);
     animation: glow 1s infinite alternate;
     animation: shake 2s ease-in-out infinite;
+  }
+  
+
+
+  .blinking-text {
+    position: absolute;
+    left: 115%;
+    top: 240px;
+    font-family: "CustomFont", sans-serif;
+    color: yellow;
+    font-size: 16px;
+    animation: blink 0.5s infinite alternate;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
 
